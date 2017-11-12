@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA65E6D21FB8003000EEEFC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6D11FB8003000EEEFC5 /* AppDelegate.m */; };
+		FA65E6DB1FB8003000EEEFC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA65E6D91FB8003000EEEFC5 /* Main.storyboard */; };
+		FA65E6DD1FB8003000EEEFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA65E6DC1FB8003000EEEFC5 /* Assets.xcassets */; };
+		FA65E6E01FB8003000EEEFC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA65E6DE1FB8003000EEEFC5 /* LaunchScreen.storyboard */; };
+		FA65E6E31FB8003000EEEFC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6E21FB8003000EEEFC5 /* main.m */; };
+		FA65E6ED1FB8003000EEEFC5 /* MyFudanCampusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6EC1FB8003000EEEFC5 /* MyFudanCampusTests.m */; };
+		FA65E6F81FB8003000EEEFC5 /* MyFudanCampusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6F71FB8003000EEEFC5 /* MyFudanCampusUITests.m */; };
+		FA65E7071FB803E500EEEFC5 /* NotificationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E7061FB803E500EEEFC5 /* NotificationTableViewController.m */; };
+		FA65E7091FB8051F00EEEFC5 /* NotificationPropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA65E7081FB8051F00EEEFC5 /* NotificationPropertyList.plist */; };
+		FA65E70C1FB8216100EEEFC5 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E70B1FB8216100EEEFC5 /* NotificationTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA65E6E91FB8003000EEEFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA65E6C51FB8003000EEEFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA65E6CC1FB8003000EEEFC5;
+			remoteInfo = MyFudanCampus;
+		};
+		FA65E6F41FB8003000EEEFC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA65E6C51FB8003000EEEFC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA65E6CC1FB8003000EEEFC5;
+			remoteInfo = MyFudanCampus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA65E6CD1FB8003000EEEFC5 /* MyFudanCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFudanCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA65E6D01FB8003000EEEFC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA65E6D11FB8003000EEEFC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA65E6DA1FB8003000EEEFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA65E6DC1FB8003000EEEFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA65E6DF1FB8003000EEEFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA65E6E11FB8003000EEEFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA65E6E21FB8003000EEEFC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA65E6E81FB8003000EEEFC5 /* MyFudanCampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFudanCampusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA65E6EC1FB8003000EEEFC5 /* MyFudanCampusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFudanCampusTests.m; sourceTree = "<group>"; };
+		FA65E6EE1FB8003000EEEFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA65E6F31FB8003000EEEFC5 /* MyFudanCampusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFudanCampusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA65E6F71FB8003000EEEFC5 /* MyFudanCampusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFudanCampusUITests.m; sourceTree = "<group>"; };
+		FA65E6F91FB8003000EEEFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA65E7051FB803E500EEEFC5 /* NotificationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewController.h; sourceTree = "<group>"; };
+		FA65E7061FB803E500EEEFC5 /* NotificationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewController.m; sourceTree = "<group>"; };
+		FA65E7081FB8051F00EEEFC5 /* NotificationPropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NotificationPropertyList.plist; sourceTree = "<group>"; };
+		FA65E70A1FB8216100EEEFC5 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
+		FA65E70B1FB8216100EEEFC5 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA65E6CA1FB8003000EEEFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA65E6E51FB8003000EEEFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA65E6F01FB8003000EEEFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA65E6C41FB8003000EEEFC5 = {
+			isa = PBXGroup;
+			children = (
+				FA65E6CF1FB8003000EEEFC5 /* MyFudanCampus */,
+				FA65E6EB1FB8003000EEEFC5 /* MyFudanCampusTests */,
+				FA65E6F61FB8003000EEEFC5 /* MyFudanCampusUITests */,
+				FA65E6CE1FB8003000EEEFC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA65E6CE1FB8003000EEEFC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA65E6CD1FB8003000EEEFC5 /* MyFudanCampus.app */,
+				FA65E6E81FB8003000EEEFC5 /* MyFudanCampusTests.xctest */,
+				FA65E6F31FB8003000EEEFC5 /* MyFudanCampusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA65E6CF1FB8003000EEEFC5 /* MyFudanCampus */ = {
+			isa = PBXGroup;
+			children = (
+				FA65E6D01FB8003000EEEFC5 /* AppDelegate.h */,
+				FA65E6D11FB8003000EEEFC5 /* AppDelegate.m */,
+				FA65E7051FB803E500EEEFC5 /* NotificationTableViewController.h */,
+				FA65E7061FB803E500EEEFC5 /* NotificationTableViewController.m */,
+				FA65E7081FB8051F00EEEFC5 /* NotificationPropertyList.plist */,
+				FA65E70A1FB8216100EEEFC5 /* NotificationTableViewCell.h */,
+				FA65E70B1FB8216100EEEFC5 /* NotificationTableViewCell.m */,
+				FA65E6D91FB8003000EEEFC5 /* Main.storyboard */,
+				FA65E6DC1FB8003000EEEFC5 /* Assets.xcassets */,
+				FA65E6DE1FB8003000EEEFC5 /* LaunchScreen.storyboard */,
+				FA65E6E11FB8003000EEEFC5 /* Info.plist */,
+				FA65E6E21FB8003000EEEFC5 /* main.m */,
+			);
+			path = MyFudanCampus;
+			sourceTree = "<group>";
+		};
+		FA65E6EB1FB8003000EEEFC5 /* MyFudanCampusTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA65E6EC1FB8003000EEEFC5 /* MyFudanCampusTests.m */,
+				FA65E6EE1FB8003000EEEFC5 /* Info.plist */,
+			);
+			path = MyFudanCampusTests;
+			sourceTree = "<group>";
+		};
+		FA65E6F61FB8003000EEEFC5 /* MyFudanCampusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA65E6F71FB8003000EEEFC5 /* MyFudanCampusUITests.m */,
+				FA65E6F91FB8003000EEEFC5 /* Info.plist */,
+			);
+			path = MyFudanCampusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA65E6FC1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampus" */;
+			buildPhases = (
+				FA65E6C91FB8003000EEEFC5 /* Sources */,
+				FA65E6CA1FB8003000EEEFC5 /* Frameworks */,
+				FA65E6CB1FB8003000EEEFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFudanCampus;
+			productName = MyFudanCampus;
+			productReference = FA65E6CD1FB8003000EEEFC5 /* MyFudanCampus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA65E6E71FB8003000EEEFC5 /* MyFudanCampusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA65E6FF1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusTests" */;
+			buildPhases = (
+				FA65E6E41FB8003000EEEFC5 /* Sources */,
+				FA65E6E51FB8003000EEEFC5 /* Frameworks */,
+				FA65E6E61FB8003000EEEFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA65E6EA1FB8003000EEEFC5 /* PBXTargetDependency */,
+			);
+			name = MyFudanCampusTests;
+			productName = MyFudanCampusTests;
+			productReference = FA65E6E81FB8003000EEEFC5 /* MyFudanCampusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA65E6F21FB8003000EEEFC5 /* MyFudanCampusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA65E7021FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusUITests" */;
+			buildPhases = (
+				FA65E6EF1FB8003000EEEFC5 /* Sources */,
+				FA65E6F01FB8003000EEEFC5 /* Frameworks */,
+				FA65E6F11FB8003000EEEFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA65E6F51FB8003000EEEFC5 /* PBXTargetDependency */,
+			);
+			name = MyFudanCampusUITests;
+			productName = MyFudanCampusUITests;
+			productReference = FA65E6F31FB8003000EEEFC5 /* MyFudanCampusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA65E6C51FB8003000EEEFC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = AlexLLL;
+				TargetAttributes = {
+					FA65E6CC1FB8003000EEEFC5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					FA65E6E71FB8003000EEEFC5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA65E6CC1FB8003000EEEFC5;
+					};
+					FA65E6F21FB8003000EEEFC5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA65E6CC1FB8003000EEEFC5;
+					};
+				};
+			};
+			buildConfigurationList = FA65E6C81FB8003000EEEFC5 /* Build configuration list for PBXProject "MyFudanCampus" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA65E6C41FB8003000EEEFC5;
+			productRefGroup = FA65E6CE1FB8003000EEEFC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */,
+				FA65E6E71FB8003000EEEFC5 /* MyFudanCampusTests */,
+				FA65E6F21FB8003000EEEFC5 /* MyFudanCampusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA65E6CB1FB8003000EEEFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA65E7091FB8051F00EEEFC5 /* NotificationPropertyList.plist in Resources */,
+				FA65E6E01FB8003000EEEFC5 /* LaunchScreen.storyboard in Resources */,
+				FA65E6DD1FB8003000EEEFC5 /* Assets.xcassets in Resources */,
+				FA65E6DB1FB8003000EEEFC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA65E6E61FB8003000EEEFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA65E6F11FB8003000EEEFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA65E6C91FB8003000EEEFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA65E70C1FB8216100EEEFC5 /* NotificationTableViewCell.m in Sources */,
+				FA65E7071FB803E500EEEFC5 /* NotificationTableViewController.m in Sources */,
+				FA65E6D21FB8003000EEEFC5 /* AppDelegate.m in Sources */,
+				FA65E6E31FB8003000EEEFC5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA65E6E41FB8003000EEEFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA65E6ED1FB8003000EEEFC5 /* MyFudanCampusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA65E6EF1FB8003000EEEFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA65E6F81FB8003000EEEFC5 /* MyFudanCampusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA65E6EA1FB8003000EEEFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */;
+			targetProxy = FA65E6E91FB8003000EEEFC5 /* PBXContainerItemProxy */;
+		};
+		FA65E6F51FB8003000EEEFC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */;
+			targetProxy = FA65E6F41FB8003000EEEFC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA65E6D91FB8003000EEEFC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA65E6DA1FB8003000EEEFC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA65E6DE1FB8003000EEEFC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA65E6DF1FB8003000EEEFC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA65E6FA1FB8003000EEEFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA65E6FB1FB8003000EEEFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA65E6FD1FB8003000EEEFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFudanCampus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA65E6FE1FB8003000EEEFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFudanCampus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA65E7001FB8003000EEEFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFudanCampusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFudanCampus.app/MyFudanCampus";
+			};
+			name = Debug;
+		};
+		FA65E7011FB8003000EEEFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFudanCampusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFudanCampus.app/MyFudanCampus";
+			};
+			name = Release;
+		};
+		FA65E7031FB8003000EEEFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFudanCampusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyFudanCampus;
+			};
+			name = Debug;
+		};
+		FA65E7041FB8003000EEEFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFudanCampusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyFudanCampus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA65E6C81FB8003000EEEFC5 /* Build configuration list for PBXProject "MyFudanCampus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA65E6FA1FB8003000EEEFC5 /* Debug */,
+				FA65E6FB1FB8003000EEEFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA65E6FC1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA65E6FD1FB8003000EEEFC5 /* Debug */,
+				FA65E6FE1FB8003000EEEFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA65E6FF1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA65E7001FB8003000EEEFC5 /* Debug */,
+				FA65E7011FB8003000EEEFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA65E7021FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA65E7031FB8003000EEEFC5 /* Debug */,
+				FA65E7041FB8003000EEEFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA65E6C51FB8003000EEEFC5 /* Project object */;
+}
