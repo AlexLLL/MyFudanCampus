@@ -7,73 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA65E6D21FB8003000EEEFC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6D11FB8003000EEEFC5 /* AppDelegate.m */; };
-		FA65E6DB1FB8003000EEEFC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA65E6D91FB8003000EEEFC5 /* Main.storyboard */; };
-		FA65E6DD1FB8003000EEEFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA65E6DC1FB8003000EEEFC5 /* Assets.xcassets */; };
-		FA65E6E01FB8003000EEEFC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA65E6DE1FB8003000EEEFC5 /* LaunchScreen.storyboard */; };
-		FA65E6E31FB8003000EEEFC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6E21FB8003000EEEFC5 /* main.m */; };
-		FA65E6ED1FB8003000EEEFC5 /* MyFudanCampusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6EC1FB8003000EEEFC5 /* MyFudanCampusTests.m */; };
-		FA65E6F81FB8003000EEEFC5 /* MyFudanCampusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E6F71FB8003000EEEFC5 /* MyFudanCampusUITests.m */; };
-		FA65E7071FB803E500EEEFC5 /* NotificationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E7061FB803E500EEEFC5 /* NotificationTableViewController.m */; };
-		FA65E7091FB8051F00EEEFC5 /* NotificationPropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA65E7081FB8051F00EEEFC5 /* NotificationPropertyList.plist */; };
-		FA65E70C1FB8216100EEEFC5 /* NotificationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA65E70B1FB8216100EEEFC5 /* NotificationTableViewCell.m */; };
+		FA2036261FB9E8EE00E861CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036251FB9E8EE00E861CE /* AppDelegate.swift */; };
+		FA2036281FB9E8EE00E861CE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036271FB9E8EE00E861CE /* FirstViewController.swift */; };
+		FA20362A1FB9E8EF00E861CE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036291FB9E8EF00E861CE /* SecondViewController.swift */; };
+		FA20362D1FB9E8EF00E861CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA20362B1FB9E8EF00E861CE /* Main.storyboard */; };
+		FA20362F1FB9E8EF00E861CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA20362E1FB9E8EF00E861CE /* Assets.xcassets */; };
+		FA2036321FB9E8EF00E861CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */; };
+		FA20363D1FB9E8EF00E861CE /* MyFudanCampusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20363C1FB9E8EF00E861CE /* MyFudanCampusTests.swift */; };
+		FA2036481FB9E8EF00E861CE /* MyFudanCampusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036471FB9E8EF00E861CE /* MyFudanCampusUITests.swift */; };
+		FA2036561FB9F83C00E861CE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036551FB9F83C00E861CE /* ThirdViewController.swift */; };
+		FA2036581FBA07DC00E861CE /* navi_go_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2036571FBA07DC00E861CE /* navi_go_back@3x.png */; };
+		FA20365A1FBA07EE00E861CE /* navi_go_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2036591FBA07EE00E861CE /* navi_go_back@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FA65E6E91FB8003000EEEFC5 /* PBXContainerItemProxy */ = {
+		FA2036391FB9E8EF00E861CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA65E6C51FB8003000EEEFC5 /* Project object */;
+			containerPortal = FA20361A1FB9E8EE00E861CE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA65E6CC1FB8003000EEEFC5;
+			remoteGlobalIDString = FA2036211FB9E8EE00E861CE;
 			remoteInfo = MyFudanCampus;
 		};
-		FA65E6F41FB8003000EEEFC5 /* PBXContainerItemProxy */ = {
+		FA2036441FB9E8EF00E861CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FA65E6C51FB8003000EEEFC5 /* Project object */;
+			containerPortal = FA20361A1FB9E8EE00E861CE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA65E6CC1FB8003000EEEFC5;
+			remoteGlobalIDString = FA2036211FB9E8EE00E861CE;
 			remoteInfo = MyFudanCampus;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA65E6CD1FB8003000EEEFC5 /* MyFudanCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFudanCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA65E6D01FB8003000EEEFC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FA65E6D11FB8003000EEEFC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA65E6DA1FB8003000EEEFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FA65E6DC1FB8003000EEEFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA65E6DF1FB8003000EEEFC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FA65E6E11FB8003000EEEFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA65E6E21FB8003000EEEFC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA65E6E81FB8003000EEEFC5 /* MyFudanCampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFudanCampusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA65E6EC1FB8003000EEEFC5 /* MyFudanCampusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFudanCampusTests.m; sourceTree = "<group>"; };
-		FA65E6EE1FB8003000EEEFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA65E6F31FB8003000EEEFC5 /* MyFudanCampusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFudanCampusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA65E6F71FB8003000EEEFC5 /* MyFudanCampusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFudanCampusUITests.m; sourceTree = "<group>"; };
-		FA65E6F91FB8003000EEEFC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA65E7051FB803E500EEEFC5 /* NotificationTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewController.h; sourceTree = "<group>"; };
-		FA65E7061FB803E500EEEFC5 /* NotificationTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewController.m; sourceTree = "<group>"; };
-		FA65E7081FB8051F00EEEFC5 /* NotificationPropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NotificationPropertyList.plist; sourceTree = "<group>"; };
-		FA65E70A1FB8216100EEEFC5 /* NotificationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationTableViewCell.h; sourceTree = "<group>"; };
-		FA65E70B1FB8216100EEEFC5 /* NotificationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationTableViewCell.m; sourceTree = "<group>"; };
+		FA2036221FB9E8EE00E861CE /* MyFudanCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFudanCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2036251FB9E8EE00E861CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA2036271FB9E8EE00E861CE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		FA2036291FB9E8EF00E861CE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FA20362C1FB9E8EF00E861CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA20362E1FB9E8EF00E861CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA2036311FB9E8EF00E861CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA2036331FB9E8EF00E861CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2036381FB9E8EF00E861CE /* MyFudanCampusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFudanCampusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA20363C1FB9E8EF00E861CE /* MyFudanCampusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFudanCampusTests.swift; sourceTree = "<group>"; };
+		FA20363E1FB9E8EF00E861CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2036431FB9E8EF00E861CE /* MyFudanCampusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFudanCampusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2036471FB9E8EF00E861CE /* MyFudanCampusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFudanCampusUITests.swift; sourceTree = "<group>"; };
+		FA2036491FB9E8EF00E861CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2036551FB9F83C00E861CE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		FA2036571FBA07DC00E861CE /* navi_go_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navi_go_back@3x.png"; path = "../../../../Downloads/navi_go_back@3x.png"; sourceTree = "<group>"; };
+		FA2036591FBA07EE00E861CE /* navi_go_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navi_go_back@3x.png"; path = "../../../../Downloads/navi_go_back@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA65E6CA1FB8003000EEEFC5 /* Frameworks */ = {
+		FA20361F1FB9E8EE00E861CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA65E6E51FB8003000EEEFC5 /* Frameworks */ = {
+		FA2036351FB9E8EF00E861CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA65E6F01FB8003000EEEFC5 /* Frameworks */ = {
+		FA2036401FB9E8EF00E861CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,59 +82,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA65E6C41FB8003000EEEFC5 = {
+		FA2036191FB9E8EE00E861CE = {
 			isa = PBXGroup;
 			children = (
-				FA65E6CF1FB8003000EEEFC5 /* MyFudanCampus */,
-				FA65E6EB1FB8003000EEEFC5 /* MyFudanCampusTests */,
-				FA65E6F61FB8003000EEEFC5 /* MyFudanCampusUITests */,
-				FA65E6CE1FB8003000EEEFC5 /* Products */,
+				FA2036241FB9E8EE00E861CE /* MyFudanCampus */,
+				FA20363B1FB9E8EF00E861CE /* MyFudanCampusTests */,
+				FA2036461FB9E8EF00E861CE /* MyFudanCampusUITests */,
+				FA2036231FB9E8EE00E861CE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA65E6CE1FB8003000EEEFC5 /* Products */ = {
+		FA2036231FB9E8EE00E861CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA65E6CD1FB8003000EEEFC5 /* MyFudanCampus.app */,
-				FA65E6E81FB8003000EEEFC5 /* MyFudanCampusTests.xctest */,
-				FA65E6F31FB8003000EEEFC5 /* MyFudanCampusUITests.xctest */,
+				FA2036221FB9E8EE00E861CE /* MyFudanCampus.app */,
+				FA2036381FB9E8EF00E861CE /* MyFudanCampusTests.xctest */,
+				FA2036431FB9E8EF00E861CE /* MyFudanCampusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA65E6CF1FB8003000EEEFC5 /* MyFudanCampus */ = {
+		FA2036241FB9E8EE00E861CE /* MyFudanCampus */ = {
 			isa = PBXGroup;
 			children = (
-				FA65E6D01FB8003000EEEFC5 /* AppDelegate.h */,
-				FA65E6D11FB8003000EEEFC5 /* AppDelegate.m */,
-				FA65E7051FB803E500EEEFC5 /* NotificationTableViewController.h */,
-				FA65E7061FB803E500EEEFC5 /* NotificationTableViewController.m */,
-				FA65E7081FB8051F00EEEFC5 /* NotificationPropertyList.plist */,
-				FA65E70A1FB8216100EEEFC5 /* NotificationTableViewCell.h */,
-				FA65E70B1FB8216100EEEFC5 /* NotificationTableViewCell.m */,
-				FA65E6D91FB8003000EEEFC5 /* Main.storyboard */,
-				FA65E6DC1FB8003000EEEFC5 /* Assets.xcassets */,
-				FA65E6DE1FB8003000EEEFC5 /* LaunchScreen.storyboard */,
-				FA65E6E11FB8003000EEEFC5 /* Info.plist */,
-				FA65E6E21FB8003000EEEFC5 /* main.m */,
+				FA2036251FB9E8EE00E861CE /* AppDelegate.swift */,
+				FA2036271FB9E8EE00E861CE /* FirstViewController.swift */,
+				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
+				FA2036291FB9E8EF00E861CE /* SecondViewController.swift */,
+				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
+				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
+				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
+				FA2036331FB9E8EF00E861CE /* Info.plist */,
+				FA2036591FBA07EE00E861CE /* navi_go_back@3x.png */,
+				FA2036571FBA07DC00E861CE /* navi_go_back@3x.png */,
 			);
 			path = MyFudanCampus;
 			sourceTree = "<group>";
 		};
-		FA65E6EB1FB8003000EEEFC5 /* MyFudanCampusTests */ = {
+		FA20363B1FB9E8EF00E861CE /* MyFudanCampusTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA65E6EC1FB8003000EEEFC5 /* MyFudanCampusTests.m */,
-				FA65E6EE1FB8003000EEEFC5 /* Info.plist */,
+				FA20363C1FB9E8EF00E861CE /* MyFudanCampusTests.swift */,
+				FA20363E1FB9E8EF00E861CE /* Info.plist */,
 			);
 			path = MyFudanCampusTests;
 			sourceTree = "<group>";
 		};
-		FA65E6F61FB8003000EEEFC5 /* MyFudanCampusUITests */ = {
+		FA2036461FB9E8EF00E861CE /* MyFudanCampusUITests */ = {
 			isa = PBXGroup;
 			children = (
-				FA65E6F71FB8003000EEEFC5 /* MyFudanCampusUITests.m */,
-				FA65E6F91FB8003000EEEFC5 /* Info.plist */,
+				FA2036471FB9E8EF00E861CE /* MyFudanCampusUITests.swift */,
+				FA2036491FB9E8EF00E861CE /* Info.plist */,
 			);
 			path = MyFudanCampusUITests;
 			sourceTree = "<group>";
@@ -143,13 +140,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */ = {
+		FA2036211FB9E8EE00E861CE /* MyFudanCampus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA65E6FC1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampus" */;
+			buildConfigurationList = FA20364C1FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampus" */;
 			buildPhases = (
-				FA65E6C91FB8003000EEEFC5 /* Sources */,
-				FA65E6CA1FB8003000EEEFC5 /* Frameworks */,
-				FA65E6CB1FB8003000EEEFC5 /* Resources */,
+				FA20361E1FB9E8EE00E861CE /* Sources */,
+				FA20361F1FB9E8EE00E861CE /* Frameworks */,
+				FA2036201FB9E8EE00E861CE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,71 +154,72 @@
 			);
 			name = MyFudanCampus;
 			productName = MyFudanCampus;
-			productReference = FA65E6CD1FB8003000EEEFC5 /* MyFudanCampus.app */;
+			productReference = FA2036221FB9E8EE00E861CE /* MyFudanCampus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA65E6E71FB8003000EEEFC5 /* MyFudanCampusTests */ = {
+		FA2036371FB9E8EF00E861CE /* MyFudanCampusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA65E6FF1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusTests" */;
+			buildConfigurationList = FA20364F1FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampusTests" */;
 			buildPhases = (
-				FA65E6E41FB8003000EEEFC5 /* Sources */,
-				FA65E6E51FB8003000EEEFC5 /* Frameworks */,
-				FA65E6E61FB8003000EEEFC5 /* Resources */,
+				FA2036341FB9E8EF00E861CE /* Sources */,
+				FA2036351FB9E8EF00E861CE /* Frameworks */,
+				FA2036361FB9E8EF00E861CE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA65E6EA1FB8003000EEEFC5 /* PBXTargetDependency */,
+				FA20363A1FB9E8EF00E861CE /* PBXTargetDependency */,
 			);
 			name = MyFudanCampusTests;
 			productName = MyFudanCampusTests;
-			productReference = FA65E6E81FB8003000EEEFC5 /* MyFudanCampusTests.xctest */;
+			productReference = FA2036381FB9E8EF00E861CE /* MyFudanCampusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FA65E6F21FB8003000EEEFC5 /* MyFudanCampusUITests */ = {
+		FA2036421FB9E8EF00E861CE /* MyFudanCampusUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA65E7021FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusUITests" */;
+			buildConfigurationList = FA2036521FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampusUITests" */;
 			buildPhases = (
-				FA65E6EF1FB8003000EEEFC5 /* Sources */,
-				FA65E6F01FB8003000EEEFC5 /* Frameworks */,
-				FA65E6F11FB8003000EEEFC5 /* Resources */,
+				FA20363F1FB9E8EF00E861CE /* Sources */,
+				FA2036401FB9E8EF00E861CE /* Frameworks */,
+				FA2036411FB9E8EF00E861CE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FA65E6F51FB8003000EEEFC5 /* PBXTargetDependency */,
+				FA2036451FB9E8EF00E861CE /* PBXTargetDependency */,
 			);
 			name = MyFudanCampusUITests;
 			productName = MyFudanCampusUITests;
-			productReference = FA65E6F31FB8003000EEEFC5 /* MyFudanCampusUITests.xctest */;
+			productReference = FA2036431FB9E8EF00E861CE /* MyFudanCampusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA65E6C51FB8003000EEEFC5 /* Project object */ = {
+		FA20361A1FB9E8EE00E861CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = AlexLLL;
 				TargetAttributes = {
-					FA65E6CC1FB8003000EEEFC5 = {
+					FA2036211FB9E8EE00E861CE = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					FA65E6E71FB8003000EEEFC5 = {
+					FA2036371FB9E8EF00E861CE = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = FA65E6CC1FB8003000EEEFC5;
+						TestTargetID = FA2036211FB9E8EE00E861CE;
 					};
-					FA65E6F21FB8003000EEEFC5 = {
+					FA2036421FB9E8EF00E861CE = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = FA65E6CC1FB8003000EEEFC5;
+						TestTargetID = FA2036211FB9E8EE00E861CE;
 					};
 				};
 			};
-			buildConfigurationList = FA65E6C81FB8003000EEEFC5 /* Build configuration list for PBXProject "MyFudanCampus" */;
+			buildConfigurationList = FA20361D1FB9E8EE00E861CE /* Build configuration list for PBXProject "MyFudanCampus" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,38 +227,39 @@
 				en,
 				Base,
 			);
-			mainGroup = FA65E6C41FB8003000EEEFC5;
-			productRefGroup = FA65E6CE1FB8003000EEEFC5 /* Products */;
+			mainGroup = FA2036191FB9E8EE00E861CE;
+			productRefGroup = FA2036231FB9E8EE00E861CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */,
-				FA65E6E71FB8003000EEEFC5 /* MyFudanCampusTests */,
-				FA65E6F21FB8003000EEEFC5 /* MyFudanCampusUITests */,
+				FA2036211FB9E8EE00E861CE /* MyFudanCampus */,
+				FA2036371FB9E8EF00E861CE /* MyFudanCampusTests */,
+				FA2036421FB9E8EF00E861CE /* MyFudanCampusUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA65E6CB1FB8003000EEEFC5 /* Resources */ = {
+		FA2036201FB9E8EE00E861CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA65E7091FB8051F00EEEFC5 /* NotificationPropertyList.plist in Resources */,
-				FA65E6E01FB8003000EEEFC5 /* LaunchScreen.storyboard in Resources */,
-				FA65E6DD1FB8003000EEEFC5 /* Assets.xcassets in Resources */,
-				FA65E6DB1FB8003000EEEFC5 /* Main.storyboard in Resources */,
+				FA2036581FBA07DC00E861CE /* navi_go_back@3x.png in Resources */,
+				FA2036321FB9E8EF00E861CE /* LaunchScreen.storyboard in Resources */,
+				FA20362F1FB9E8EF00E861CE /* Assets.xcassets in Resources */,
+				FA20365A1FBA07EE00E861CE /* navi_go_back@3x.png in Resources */,
+				FA20362D1FB9E8EF00E861CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA65E6E61FB8003000EEEFC5 /* Resources */ = {
+		FA2036361FB9E8EF00E861CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA65E6F11FB8003000EEEFC5 /* Resources */ = {
+		FA2036411FB9E8EF00E861CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,61 +269,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA65E6C91FB8003000EEEFC5 /* Sources */ = {
+		FA20361E1FB9E8EE00E861CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA65E70C1FB8216100EEEFC5 /* NotificationTableViewCell.m in Sources */,
-				FA65E7071FB803E500EEEFC5 /* NotificationTableViewController.m in Sources */,
-				FA65E6D21FB8003000EEEFC5 /* AppDelegate.m in Sources */,
-				FA65E6E31FB8003000EEEFC5 /* main.m in Sources */,
+				FA20362A1FB9E8EF00E861CE /* SecondViewController.swift in Sources */,
+				FA2036261FB9E8EE00E861CE /* AppDelegate.swift in Sources */,
+				FA2036561FB9F83C00E861CE /* ThirdViewController.swift in Sources */,
+				FA2036281FB9E8EE00E861CE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA65E6E41FB8003000EEEFC5 /* Sources */ = {
+		FA2036341FB9E8EF00E861CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA65E6ED1FB8003000EEEFC5 /* MyFudanCampusTests.m in Sources */,
+				FA20363D1FB9E8EF00E861CE /* MyFudanCampusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA65E6EF1FB8003000EEEFC5 /* Sources */ = {
+		FA20363F1FB9E8EF00E861CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA65E6F81FB8003000EEEFC5 /* MyFudanCampusUITests.m in Sources */,
+				FA2036481FB9E8EF00E861CE /* MyFudanCampusUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FA65E6EA1FB8003000EEEFC5 /* PBXTargetDependency */ = {
+		FA20363A1FB9E8EF00E861CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */;
-			targetProxy = FA65E6E91FB8003000EEEFC5 /* PBXContainerItemProxy */;
+			target = FA2036211FB9E8EE00E861CE /* MyFudanCampus */;
+			targetProxy = FA2036391FB9E8EF00E861CE /* PBXContainerItemProxy */;
 		};
-		FA65E6F51FB8003000EEEFC5 /* PBXTargetDependency */ = {
+		FA2036451FB9E8EF00E861CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA65E6CC1FB8003000EEEFC5 /* MyFudanCampus */;
-			targetProxy = FA65E6F41FB8003000EEEFC5 /* PBXContainerItemProxy */;
+			target = FA2036211FB9E8EE00E861CE /* MyFudanCampus */;
+			targetProxy = FA2036441FB9E8EF00E861CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA65E6D91FB8003000EEEFC5 /* Main.storyboard */ = {
+		FA20362B1FB9E8EF00E861CE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA65E6DA1FB8003000EEEFC5 /* Base */,
+				FA20362C1FB9E8EF00E861CE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FA65E6DE1FB8003000EEEFC5 /* LaunchScreen.storyboard */ = {
+		FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FA65E6DF1FB8003000EEEFC5 /* Base */,
+				FA2036311FB9E8EF00E861CE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -332,7 +331,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FA65E6FA1FB8003000EEEFC5 /* Debug */ = {
+		FA20364A1FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -384,10 +383,12 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		FA65E6FB1FB8003000EEEFC5 /* Release */ = {
+		FA20364B1FB9E8EF00E861CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,11 +433,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FA65E6FD1FB8003000EEEFC5 /* Debug */ = {
+		FA20364D1FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -445,11 +447,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FA65E6FE1FB8003000EEEFC5 /* Release */ = {
+		FA20364E1FB9E8EF00E861CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -458,59 +461,68 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		FA65E7001FB8003000EEEFC5 /* Debug */ = {
+		FA2036501FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFudanCampus.app/MyFudanCampus";
 			};
 			name = Debug;
 		};
-		FA65E7011FB8003000EEEFC5 /* Release */ = {
+		FA2036511FB9E8EF00E861CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFudanCampus.app/MyFudanCampus";
 			};
 			name = Release;
 		};
-		FA65E7031FB8003000EEEFC5 /* Debug */ = {
+		FA2036531FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MyFudanCampus;
 			};
 			name = Debug;
 		};
-		FA65E7041FB8003000EEEFC5 /* Release */ = {
+		FA2036541FB9E8EF00E861CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MyFudanCampus;
 			};
@@ -519,43 +531,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA65E6C81FB8003000EEEFC5 /* Build configuration list for PBXProject "MyFudanCampus" */ = {
+		FA20361D1FB9E8EE00E861CE /* Build configuration list for PBXProject "MyFudanCampus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA65E6FA1FB8003000EEEFC5 /* Debug */,
-				FA65E6FB1FB8003000EEEFC5 /* Release */,
+				FA20364A1FB9E8EF00E861CE /* Debug */,
+				FA20364B1FB9E8EF00E861CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA65E6FC1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampus" */ = {
+		FA20364C1FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA65E6FD1FB8003000EEEFC5 /* Debug */,
-				FA65E6FE1FB8003000EEEFC5 /* Release */,
+				FA20364D1FB9E8EF00E861CE /* Debug */,
+				FA20364E1FB9E8EF00E861CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA65E6FF1FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusTests" */ = {
+		FA20364F1FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA65E7001FB8003000EEEFC5 /* Debug */,
-				FA65E7011FB8003000EEEFC5 /* Release */,
+				FA2036501FB9E8EF00E861CE /* Debug */,
+				FA2036511FB9E8EF00E861CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA65E7021FB8003000EEEFC5 /* Build configuration list for PBXNativeTarget "MyFudanCampusUITests" */ = {
+		FA2036521FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampusUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA65E7031FB8003000EEEFC5 /* Debug */,
-				FA65E7041FB8003000EEEFC5 /* Release */,
+				FA2036531FB9E8EF00E861CE /* Debug */,
+				FA2036541FB9E8EF00E861CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA65E6C51FB8003000EEEFC5 /* Project object */;
+	rootObject = FA20361A1FB9E8EE00E861CE /* Project object */;
 }
