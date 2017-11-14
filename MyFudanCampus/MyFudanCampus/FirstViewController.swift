@@ -26,15 +26,22 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         let preferences = WKPreferences()
         preferences.javaScriptEnabled = true
         let configuration  = WKWebViewConfiguration()
+        //
+        let jscript = "var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
+        let userScript = WKUserScript(source: jscript, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let wkUController = WKUserContentController()
+        wkUController.addUserScript(userScript)
+        configuration.userContentController = wkUController
         configuration.preferences = preferences
-        theWebView = WKWebView(frame : myView.frame, configuration : configuration)
-        
+        theWebView = WKWebView(frame : myView.frame, configuration: configuration)
+  
         //禁用页面在最顶端时下拉拖动效果
         //theWebView.scrollView.bounces = false
         
         theWebView.load(URLRequest(url : URL (string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")!))
         theWebView.navigationDelegate = self
         view.addSubview(theWebView)
+        theWebView.allowsBackForwardNavigationGestures = true
     }
     
     //创建按钮函数

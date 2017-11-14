@@ -81,6 +81,23 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
+        <!--关于-->
+        <scene sceneID="1Y2-eq-Kdo">
+            <objects>
+                <viewController id="wn8-jK-neg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNv-ya-Kbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7gW-t9-8kb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="关于" image="Fourth" id="wUv-yA-4t0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fY2-zV-Mcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="367"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -94,6 +111,7 @@
                         <segue destination="BVV-iy-KXZ" kind="relationship" relationship="viewControllers" id="tOz-Ju-RbT"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="6O9-bW-ExU" kind="relationship" relationship="viewControllers" id="dVK-hN-Zrw"/>
+                        <segue destination="wn8-jK-neg" kind="relationship" relationship="viewControllers" id="AoG-pO-RAC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -102,6 +120,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fourth" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="third" width="30" height="30"/>

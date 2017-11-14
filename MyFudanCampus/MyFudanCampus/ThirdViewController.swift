@@ -30,7 +30,37 @@ class ThirdViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         
         //禁用页面在最顶端时下拉拖动效果
         //theWebView.scrollView.bounces = false
-        theWebView.load(URLRequest(url : URL (string:"https://bbs.fudan.edu.cn/m/bbs/boa?s=B")!))
+        let myURL = URL (string:"https://bbs.fudan.edu.cn/m/bbs/boa?s=B")
+        let myRequest = URLRequest(url: myURL!)
+        //设置WKWebView cookies
+        func getJSCookiesString(cookies: [HTTPCookie]) -> String {
+            var result = ""
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeZone = NSTimeZone(abbreviation: "UTC") as TimeZone!
+            dateFormatter.dateFormat = "EEE, d MMM yyyy HH:mm:ss zzz"
+            
+            for cookie in cookies {
+                result += "document.cookie='\(cookie.name)=\(cookie.value); domain=\(cookie.domain); path=\(cookie.path); "
+                if let date = cookie.expiresDate {
+                    result += "expires=\(dateFormatter.string(from: date)); "
+                }
+                if (cookie.isSecure) {
+                    result += "secure; "
+                }
+                result += "'; "
+            }
+            return result
+        }
+        let userContentController = WKUserContentController()
+        if let cookies = HTTPCookieStorage.shared.cookies{
+            print(cookies)
+            let script = getJSCookiesString(cookies: cookies)
+            let cookieScript = WKUserScript(source: script, injectionTime: WKUserScriptInjectionTime.atDocumentStart, forMainFrameOnly: false)
+            userContentController.addUserScript(cookieScript)
+        }
+        configuration.userContentController = userContentController
+        //加载
+        theWebView.load(myRequest)
         theWebView.navigationDelegate = self
         view.addSubview(theWebView)
     }
