@@ -13,37 +13,87 @@ import WebKit
 
 class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     var theWebView: WKWebView!
-    
-    override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        theWebView = WKWebView(frame: .zero, configuration: webConfiguration)
-        theWebView.uiDelegate = self
-        view = theWebView
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //将浏览器视图全屏(在内容区域全屏,不占用顶端时间条)
-        let frame = CGRect(x:0, y:100, width:UIScreen.main.bounds.width + 500, height:UIScreen.main.bounds.height + 1500)
-        let theWebView:WKWebView = WKWebView(frame:frame)
+        bar()
+        
+        //设置网页边界
+        let screenSize: CGRect = UIScreen.main.bounds
+        let myView = UIView(frame: CGRect(x: 0, y: 100, width: screenSize.width, height: screenSize.height-100))
+        self.view.addSubview(myView)
+        
+
+        
+        //加载页面
+        let preferences = WKPreferences()
+        preferences.javaScriptEnabled = true
+        let configuration  = WKWebViewConfiguration()
+        configuration.preferences = preferences
+        theWebView = WKWebView(frame : myView.frame, configuration : configuration)
         
         //禁用页面在最顶端时下拉拖动效果
         theWebView.scrollView.bounces = false
-        //加载页面
-        let url = URL(string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")
-        let request = URLRequest(url:url!)
-        theWebView.load(request)
-        self.view.addSubview(theWebView)
         
+        theWebView.load(URLRequest(url : URL (string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")!))
+        theWebView.navigationDelegate = self
+        view.addSubview(theWebView)
+
         
     }
-
     
-    @IBAction func onBackButton_Clicked(sender: UIButton)
-    {
-        if(theWebView.canGoBack)
-        {
-            theWebView.goBack()
+    //创建按钮函数
+    @objc func goBack() {
+        self.theWebView.goBack()
+    }
+    @objc func home(){
+        self.theWebView.load(URLRequest(url : URL (string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")!))
+    }
+    func bar() {
+        //创建导航栏
+        let screenSize: CGRect = UIScreen.main.bounds
+        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 25, width: screenSize.width, height: 100))
+        self.view.addSubview(navBar);
+        navBar.barTintColor = UIColor.black
+        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        let navigationItem = UINavigationItem(title: "Careers | Fudan");
+        navBar.setItems([navigationItem], animated: false);
+        //创建导航项的按钮
+        func showLeftNavigationItem(){
+            
+            let goBackBtn = UIButton.init()
+            let closeBtn = UIButton.init()
+            
+            goBackBtn.setImage(UIImage.init(named: "NavBack"), for: UIControlState.normal)
+            goBackBtn.addTarget(self, action: #selector(goBack), for: UIControlEvents.touchUpInside)
+            goBackBtn.sizeToFit()
+            let backItem = UIBarButtonItem.init(customView: goBackBtn)
+            closeBtn.setTitle("关闭", for: UIControlState.normal)
+            closeBtn.addTarget(self, action: #selector(home), for: UIControlEvents.touchUpInside)
+            closeBtn.sizeToFit()
+            let closeItem = UIBarButtonItem.init(customView: closeBtn)
+            
+            navigationItem.setLeftBarButton(backItem, animated: false)
+            navigationItem.setRightBarButton(closeItem, animated: false)
+            
+        }
+
+        //加载完成时，决定是否显示这两个按钮：
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            
+            checkGoBack()
+        }
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+            
+            checkGoBack()
+        }
+        func checkGoBack(){
+            
+            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = !self.theWebView.canGoBack
+            if self.theWebView.canGoBack{
+                showLeftNavigationItem()
+            }else{
+                self.navigationItem.leftBarButtonItems = nil
+            }
         }
     }
     

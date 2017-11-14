@@ -17,20 +17,10 @@
                     <view key="view" contentMode="scaleToFill" id="9Vb-ob-ISg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnh-0P-7tP">
-                                <rect key="frame" x="16" y="0.0" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onBackButton_ClickedWithSender:" destination="BVV-iy-KXZ" eventType="touchUpInside" id="Juj-bJ-Bgo"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ebW-Qe-eG9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="宣讲会" id="MT7-Me-IOn"/>
+                    <tabBarItem key="tabBarItem" title="宣讲会" image="first" id="MT7-Me-IOn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRF-58-swU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,14 +37,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xso-Ge-1fu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="二手市场" id="pIU-Cr-dPu"/>
+                    <tabBarItem key="tabBarItem" title="二手市场" image="second" id="pIU-Cr-dPu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odj-gk-BJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1511" y="-323"/>
         </scene>
-        <!--Second-->
+        <!--选课宝典-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,7 +75,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="选课宝典" image="third" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +102,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="third" width="30" height="30"/>
     </resources>
 </document>

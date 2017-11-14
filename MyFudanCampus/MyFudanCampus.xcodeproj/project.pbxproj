@@ -16,8 +16,6 @@
 		FA20363D1FB9E8EF00E861CE /* MyFudanCampusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA20363C1FB9E8EF00E861CE /* MyFudanCampusTests.swift */; };
 		FA2036481FB9E8EF00E861CE /* MyFudanCampusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036471FB9E8EF00E861CE /* MyFudanCampusUITests.swift */; };
 		FA2036561FB9F83C00E861CE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036551FB9F83C00E861CE /* ThirdViewController.swift */; };
-		FA2036581FBA07DC00E861CE /* navi_go_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2036571FBA07DC00E861CE /* navi_go_back@3x.png */; };
-		FA20365A1FBA07EE00E861CE /* navi_go_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2036591FBA07EE00E861CE /* navi_go_back@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +51,6 @@
 		FA2036471FB9E8EF00E861CE /* MyFudanCampusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFudanCampusUITests.swift; sourceTree = "<group>"; };
 		FA2036491FB9E8EF00E861CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2036551FB9F83C00E861CE /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		FA2036571FBA07DC00E861CE /* navi_go_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navi_go_back@3x.png"; path = "../../../../Downloads/navi_go_back@3x.png"; sourceTree = "<group>"; };
-		FA2036591FBA07EE00E861CE /* navi_go_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navi_go_back@3x.png"; path = "../../../../Downloads/navi_go_back@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +103,12 @@
 			children = (
 				FA2036251FB9E8EE00E861CE /* AppDelegate.swift */,
 				FA2036271FB9E8EE00E861CE /* FirstViewController.swift */,
-				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
 				FA2036291FB9E8EF00E861CE /* SecondViewController.swift */,
+				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
 				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
 				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
 				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
 				FA2036331FB9E8EF00E861CE /* Info.plist */,
-				FA2036591FBA07EE00E861CE /* navi_go_back@3x.png */,
-				FA2036571FBA07DC00E861CE /* navi_go_back@3x.png */,
 			);
 			path = MyFudanCampus;
 			sourceTree = "<group>";
@@ -244,10 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2036581FBA07DC00E861CE /* navi_go_back@3x.png in Resources */,
 				FA2036321FB9E8EF00E861CE /* LaunchScreen.storyboard in Resources */,
 				FA20362F1FB9E8EF00E861CE /* Assets.xcassets in Resources */,
-				FA20365A1FBA07EE00E861CE /* navi_go_back@3x.png in Resources */,
 				FA20362D1FB9E8EF00E861CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
