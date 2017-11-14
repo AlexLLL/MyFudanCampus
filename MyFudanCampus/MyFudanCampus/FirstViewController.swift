@@ -32,7 +32,7 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         theWebView = WKWebView(frame : myView.frame, configuration : configuration)
         
         //禁用页面在最顶端时下拉拖动效果
-        theWebView.scrollView.bounces = false
+        //theWebView.scrollView.bounces = false
         
         theWebView.load(URLRequest(url : URL (string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")!))
         theWebView.navigationDelegate = self
@@ -58,7 +58,8 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         let navigationItem = UINavigationItem(title: "Careers | Fudan");
         navBar.setItems([navigationItem], animated: false);
         //创建导航项的按钮
-        func showLeftNavigationItem(){
+        
+        func showNavigationItem(){
             
             let goBackBtn = UIButton.init()
             let closeBtn = UIButton.init()
@@ -67,7 +68,7 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
             goBackBtn.addTarget(self, action: #selector(goBack), for: UIControlEvents.touchUpInside)
             goBackBtn.sizeToFit()
             let backItem = UIBarButtonItem.init(customView: goBackBtn)
-            closeBtn.setTitle("关闭", for: UIControlState.normal)
+            closeBtn.setTitle("首页", for: UIControlState.normal)
             closeBtn.addTarget(self, action: #selector(home), for: UIControlEvents.touchUpInside)
             closeBtn.sizeToFit()
             let closeItem = UIBarButtonItem.init(customView: closeBtn)
@@ -76,7 +77,8 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
             navigationItem.setRightBarButton(closeItem, animated: false)
             
         }
-
+        showNavigationItem()
+        
         //加载完成时，决定是否显示这两个按钮：
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             
@@ -90,7 +92,7 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
             
             self.navigationController?.interactivePopGestureRecognizer?.isEnabled = !self.theWebView.canGoBack
             if self.theWebView.canGoBack{
-                showLeftNavigationItem()
+                showNavigationItem()
             }else{
                 self.navigationItem.leftBarButtonItems = nil
             }
