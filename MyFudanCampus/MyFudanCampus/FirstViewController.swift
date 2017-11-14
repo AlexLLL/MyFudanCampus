@@ -19,10 +19,8 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         
         //设置网页边界
         let screenSize: CGRect = UIScreen.main.bounds
-        let myView = UIView(frame: CGRect(x: 0, y: 100, width: screenSize.width, height: screenSize.height-100))
+        let myView = UIView(frame: CGRect(x: 0, y: 60, width: screenSize.width, height: screenSize.height-60))
         self.view.addSubview(myView)
-        
-
         
         //加载页面
         let preferences = WKPreferences()
@@ -37,8 +35,6 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         theWebView.load(URLRequest(url : URL (string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")!))
         theWebView.navigationDelegate = self
         view.addSubview(theWebView)
-
-        
     }
     
     //创建按钮函数
@@ -51,7 +47,7 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
     func bar() {
         //创建导航栏
         let screenSize: CGRect = UIScreen.main.bounds
-        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 25, width: screenSize.width, height: 100))
+        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: screenSize.width, height: 60))
         self.view.addSubview(navBar);
         navBar.barTintColor = UIColor.black
         navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]

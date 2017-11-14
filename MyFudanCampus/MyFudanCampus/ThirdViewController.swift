@@ -9,32 +9,90 @@
 import UIKit
 import WebKit
 
-class ThirdViewController: UIViewController, WKUIDelegate {
+class ThirdViewController: UIViewController, WKUIDelegate, WKNavigationDelegate  {
     var theWebView: WKWebView!
     
-    override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        theWebView = WKWebView(frame: .zero, configuration: webConfiguration)
-        theWebView.uiDelegate = self
-        view = theWebView
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bar()
+        //设置网页边界
+        let screenSize: CGRect = UIScreen.main.bounds
+        let myView = UIView(frame: CGRect(x: 0, y: 60, width: screenSize.width, height: screenSize.height-60))
+        self.view.addSubview(myView)
         
-        
-        //将浏览器视图全屏(在内容区域全屏,不占用顶端时间条)
-        let frame = CGRect(x:0, y:20, width:UIScreen.main.bounds.width, height:UIScreen.main.bounds.height)
-        let theWebView:WKWebView = WKWebView(frame:frame)
-        //禁用页面在最顶端时下拉拖动效果
-        theWebView.scrollView.bounces = false
         //加载页面
-        let url = URL(string:"https://bbs.fudan.edu.cn/m/bbs/boa?s=B")
-        let request = URLRequest(url:url!)
-        theWebView.load(request)
-        self.view.addSubview(theWebView)
+        let preferences = WKPreferences()
+        preferences.javaScriptEnabled = true
+        let configuration  = WKWebViewConfiguration()
+        configuration.preferences = preferences
+        theWebView = WKWebView(frame : myView.frame, configuration : configuration)
+        
+        //禁用页面在最顶端时下拉拖动效果
+        //theWebView.scrollView.bounces = false
+        theWebView.load(URLRequest(url : URL (string:"https://bbs.fudan.edu.cn/m/bbs/boa?s=B")!))
+        theWebView.navigationDelegate = self
+        view.addSubview(theWebView)
     }
-    
+
+    //创建按钮函数
+    @objc func goBack() {
+        self.theWebView.goBack()
+    }
+    @objc func home(){
+        self.theWebView.load(URLRequest(url : URL (string:"https://bbs.fudan.edu.cn/m/bbs/boa?s=B")!))
+    }
+    func bar() {
+        //创建导航栏
+        let screenSize: CGRect = UIScreen.main.bounds
+        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: screenSize.width, height: 60))
+        self.view.addSubview(navBar);
+        navBar.barTintColor = UIColor.black
+        navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        let navigationItem = UINavigationItem(title: "BBS | Fudan");
+        navBar.setItems([navigationItem], animated: false);
+        //创建导航项的按钮
+        
+        func showNavigationItem(){
+            
+            let goBackBtn = UIButton.init()
+            let closeBtn = UIButton.init()
+            
+            goBackBtn.setImage(UIImage.init(named: "NavBack"), for: UIControlState.normal)
+            goBackBtn.addTarget(self, action: #selector(goBack), for: UIControlEvents.touchUpInside)
+            goBackBtn.sizeToFit()
+            let backItem = UIBarButtonItem.init(customView: goBackBtn)
+            closeBtn.setTitle("首页", for: UIControlState.normal)
+            closeBtn.addTarget(self, action: #selector(home), for: UIControlEvents.touchUpInside)
+            closeBtn.sizeToFit()
+            let closeItem = UIBarButtonItem.init(customView: closeBtn)
+            
+            navigationItem.setLeftBarButton(backItem, animated: false)
+            navigationItem.setRightBarButton(closeItem, animated: false)
+            
+        }
+        showNavigationItem()
+        
+        //加载完成时，决定是否显示这两个按钮：
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            
+            checkGoBack()
+        }
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+            
+            checkGoBack()
+        }
+        func checkGoBack(){
+            
+            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = !self.theWebView.canGoBack
+            if self.theWebView.canGoBack{
+                showNavigationItem()
+            }else{
+                self.navigationItem.leftBarButtonItems = nil
+            }
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
