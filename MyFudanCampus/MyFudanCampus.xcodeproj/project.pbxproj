@@ -26,6 +26,7 @@
 		FA2A83CF1FBF2F6800365C1F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */; };
 		FA7D72CA1FBFDA0A002B8A2E /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA7D72C91FBFDA0A002B8A2E /* data.s3db */; };
 		FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */; };
+		FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA591C91FC084DA003C7AD4 /* scoreModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FA7D72C91FBFDA0A002B8A2E /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
 		FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		FAA591C91FC084DA003C7AD4 /* scoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */,
 				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
 				FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */,
+				FAA591C91FC084DA003C7AD4 /* scoreModel.swift */,
 				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
 				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
 				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
@@ -330,6 +333,7 @@
 				FA2A83CF1FBF2F6800365C1F /* DetailViewController.swift in Sources */,
 				FA2A83BF1FBF21DC00365C1F /* FMDatabaseQueue.m in Sources */,
 				FA20362A1FB9E8EF00E861CE /* SecondViewController.swift in Sources */,
+				FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */,
 				FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */,
 				FA2036261FB9E8EE00E861CE /* AppDelegate.swift in Sources */,
 				FA2A83C11FBF21DC00365C1F /* FMDatabase.m in Sources */,
