@@ -15,7 +15,7 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
     var theWebView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        bar()
+        navigationBar()
         
         //设置网页边界
         let screenSize: CGRect = UIScreen.main.bounds
@@ -51,7 +51,7 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
     @objc func home(){
         self.theWebView.load(URLRequest(url : URL (string:"http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=12&list=true")!))
     }
-    func bar() {
+    func navigationBar() {
         //创建导航栏
         let screenSize: CGRect = UIScreen.main.bounds
         let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: screenSize.width, height: 60))
