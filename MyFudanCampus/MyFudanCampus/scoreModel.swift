@@ -18,3 +18,13 @@ class scoreModel: NSObject {
     var scoreValue:String = String()
     var studentCount:Int = Int()
 }
+
+class resultModel: NSObject {
+    var lessonName:String = String()
+    var lessonCode:String = String()
+    var creditPoint:Double = Double()
+    var totalStudentNumber:Int = Int()
+    var teacherName:String = String()
+    var semesterName:String = String()
+    var scoreDic: [String: Int] = [String: Int]()
+}

@@ -24,25 +24,10 @@ class SQLiteManager: NSObject {
         //2.2 创建数据库
         dbQueue = FMDatabaseQueue(path: dbPath)
         // 3.创建表
-        createTable()
+        //createTable()
     }
     
-    /**
-     创建表
-     */
-    func createTable()  {
-        // 1.编写SQL语句
-        let sql = "CREATE TABLE IF NOT EXISTS T_Person( " +
-            "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-            "name TEXT," +
-            "age INTEGER " +
-        ");"
-        
-        // 2.执行SQL语句
-        dbQueue?.inDatabase({ (db) -> Void in
-            db.executeUpdate(sql, withArgumentsIn:[])
-        })
-    }
+    
     // 3. 查询数据库,并将数据以数组的形式返回:
     func queryDB(sql: String) -> NSMutableArray {
         
@@ -53,7 +38,7 @@ class SQLiteManager: NSObject {
         // 3.2 执行sql
         SQLiteManager.shareInstance.dbQueue?.inDatabase { (db) in
             let dbResult: FMResultSet! = db.executeQuery(sql, withArgumentsIn:[])
-
+            
             // 遍历结果
             if (dbResult != nil)
             {
@@ -67,6 +52,7 @@ class SQLiteManager: NSObject {
                     model.totalStudentNumber = Int(dbResult.int(forColumn: "totalStudentNumber"))
                     model.scoreValue = String(dbResult.string(forColumn: "scoreValue")!)
                     model.studentCount = Int(dbResult.int(forColumn: "studentCount"))
+                    //print(model.lessonName)
                     resultArray.add(model)
                 }
             }
