@@ -55,18 +55,20 @@ class SQLiteManager: NSObject {
             let dbResult: FMResultSet! = db.executeQuery(sql, withArgumentsIn:[])
 
             // 遍历结果
-            while dbResult.next() {
-                let model:scoreModel = scoreModel()
-                model.lessonName = String(describing: dbResult.string(forColumn: "lessonName"))
-                model.lessonCode = String(describing: dbResult.string(forColumn: "lessonCode"))
-                model.creditPoint = Double(dbResult.double(forColumn: "creditPoint"))
-                model.semesterName = String(describing: dbResult.string(forColumn: "semesterName"))
-                model.teacherName = String(describing: dbResult.string(forColumn: "teacherName"))
-                model.totalStudentNumber = Int(dbResult.int(forColumn: "totalStudentNumber"))
-                model.scoreValue = String(describing: dbResult.string(forColumn: "scoreValue"))
-                model.studentCount = Int(dbResult.int(forColumn: "studentCount"))
-                // 添加到可变数组
-                resultArray.add(model)
+            if (dbResult != nil)
+            {
+                while dbResult.next() {
+                    let model:scoreModel = scoreModel()
+                    model.lessonName = String(dbResult.string(forColumn: "lessonName")!)
+                    model.lessonCode = String(dbResult.string(forColumn: "lessonCode")!)
+                    model.creditPoint = Double(dbResult.double(forColumn: "creditPoint"))
+                    model.semesterName = String(dbResult.string(forColumn: "semesterName")!)
+                    model.teacherName = String(dbResult.string(forColumn: "teacherName")!)
+                    model.totalStudentNumber = Int(dbResult.int(forColumn: "totalStudentNumber"))
+                    model.scoreValue = String(dbResult.string(forColumn: "scoreValue")!)
+                    model.studentCount = Int(dbResult.int(forColumn: "studentCount"))
+                    resultArray.add(model)
+                }
             }
         }
         return resultArray

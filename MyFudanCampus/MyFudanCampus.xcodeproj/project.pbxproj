@@ -24,7 +24,7 @@
 		FA2A83C71FBF221300365C1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2A83C61FBF220A00365C1F /* libsqlite3.tbd */; };
 		FA2A83CD1FBF2E8000365C1F /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */; };
 		FA2A83CF1FBF2F6800365C1F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */; };
-		FA7D72CA1FBFDA0A002B8A2E /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA7D72C91FBFDA0A002B8A2E /* data.s3db */; };
+		FA693DF21FC32B4B00508DAE /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA693DF11FC32B4B00508DAE /* data.s3db */; };
 		FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */; };
 		FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA591C91FC084DA003C7AD4 /* scoreModel.swift */; };
 /* End PBXBuildFile section */
@@ -77,7 +77,7 @@
 		FA2A83C91FBF223D00365C1F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FA7D72C91FBFDA0A002B8A2E /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
+		FA693DF11FC32B4B00508DAE /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
 		FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		FAA591C91FC084DA003C7AD4 /* scoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +143,7 @@
 				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
 				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
 				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
-				FA7D72C91FBFDA0A002B8A2E /* data.s3db */,
+				FA693DF11FC32B4B00508DAE /* data.s3db */,
 				FA2036331FB9E8EF00E861CE /* Info.plist */,
 				FA2A83B21FBF21DB00365C1F /* fmdb */,
 				FA2A83C91FBF223D00365C1F /* Header.h */,
@@ -303,7 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2036321FB9E8EF00E861CE /* LaunchScreen.storyboard in Resources */,
-				FA7D72CA1FBFDA0A002B8A2E /* data.s3db in Resources */,
+				FA693DF21FC32B4B00508DAE /* data.s3db in Resources */,
 				FA20362F1FB9E8EF00E861CE /* Assets.xcassets in Resources */,
 				FA20362D1FB9E8EF00E861CE /* Main.storyboard in Resources */,
 			);
