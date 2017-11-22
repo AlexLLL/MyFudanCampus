@@ -26,5 +26,5 @@ class resultModel: NSObject {
     var totalStudentNumber:Int = Int()
     var teacherName:String = String()
     var semesterName:String = String()
-    var scoreDic: [String: Int] = [String: Int]()
+    var scoreArray: [Dictionary<String, Int>] = [Dictionary<String, Int>]()
 }

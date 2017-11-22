@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    //var lineChartEntry = [ChartDataEntry]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

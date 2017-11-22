@@ -1,0 +1,6 @@
+framework module Pods_MyFudanCampus {
+  umbrella header "Pods-MyFudanCampus-umbrella.h"
+
+  export *
+  module * { export * }
+}

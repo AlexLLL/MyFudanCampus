@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AAAEB832792C4D9964DC9A /* Pods_MyFudanCampus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DE145E67CB4652A00FFCA8 /* Pods_MyFudanCampus.framework */; };
 		FA2036261FB9E8EE00E861CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036251FB9E8EE00E861CE /* AppDelegate.swift */; };
 		FA2036281FB9E8EE00E861CE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036271FB9E8EE00E861CE /* FirstViewController.swift */; };
 		FA20362A1FB9E8EF00E861CE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2036291FB9E8EF00E861CE /* SecondViewController.swift */; };
@@ -24,7 +25,7 @@
 		FA2A83C71FBF221300365C1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2A83C61FBF220A00365C1F /* libsqlite3.tbd */; };
 		FA2A83CD1FBF2E8000365C1F /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */; };
 		FA2A83CF1FBF2F6800365C1F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */; };
-		FA693DF21FC32B4B00508DAE /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA693DF11FC32B4B00508DAE /* data.s3db */; };
+		FA658A501FC5D60E00454934 /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA658A4F1FC5D60E00454934 /* data.s3db */; };
 		FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */; };
 		FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA591C91FC084DA003C7AD4 /* scoreModel.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +47,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA19D3431FC5DFC80097B722 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		26DE145E67CB4652A00FFCA8 /* Pods_MyFudanCampus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFudanCampus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60DE0D9B68F87D4D201467CA /* Pods-MyFudanCampus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFudanCampus.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFudanCampus/Pods-MyFudanCampus.release.xcconfig"; sourceTree = "<group>"; };
+		6ACF1FA47ED8824CB796AC3B /* Pods-MyFudanCampus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFudanCampus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFudanCampus/Pods-MyFudanCampus.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2036221FB9E8EE00E861CE /* MyFudanCampus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFudanCampus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2036251FB9E8EE00E861CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2036271FB9E8EE00E861CE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +94,7 @@
 		FA2A83C91FBF223D00365C1F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FA693DF11FC32B4B00508DAE /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
+		FA658A4F1FC5D60E00454934 /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
 		FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		FAA591C91FC084DA003C7AD4 /* scoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2A83C71FBF221300365C1F /* libsqlite3.tbd in Frameworks */,
+				23AAAEB832792C4D9964DC9A /* Pods_MyFudanCampus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		244E5E2BD312B84778E0101B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ACF1FA47ED8824CB796AC3B /* Pods-MyFudanCampus.debug.xcconfig */,
+				60DE0D9B68F87D4D201467CA /* Pods-MyFudanCampus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FA2036191FB9E8EE00E861CE = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +143,7 @@
 				FA2036461FB9E8EF00E861CE /* MyFudanCampusUITests */,
 				FA2036231FB9E8EE00E861CE /* Products */,
 				FA2A83C51FBF220A00365C1F /* Frameworks */,
+				244E5E2BD312B84778E0101B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +160,7 @@
 		FA2036241FB9E8EE00E861CE /* MyFudanCampus */ = {
 			isa = PBXGroup;
 			children = (
+				FA658A4F1FC5D60E00454934 /* data.s3db */,
 				FA2036251FB9E8EE00E861CE /* AppDelegate.swift */,
 				FA2036271FB9E8EE00E861CE /* FirstViewController.swift */,
 				FA2036291FB9E8EF00E861CE /* SecondViewController.swift */,
@@ -143,7 +172,6 @@
 				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
 				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
 				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
-				FA693DF11FC32B4B00508DAE /* data.s3db */,
 				FA2036331FB9E8EF00E861CE /* Info.plist */,
 				FA2A83B21FBF21DB00365C1F /* fmdb */,
 				FA2A83C91FBF223D00365C1F /* Header.h */,
@@ -191,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2A83C61FBF220A00365C1F /* libsqlite3.tbd */,
+				26DE145E67CB4652A00FFCA8 /* Pods_MyFudanCampus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,9 +231,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA20364C1FB9E8EF00E861CE /* Build configuration list for PBXNativeTarget "MyFudanCampus" */;
 			buildPhases = (
+				767EECC94ACCBE43EEFD472D /* [CP] Check Pods Manifest.lock */,
 				FA20361E1FB9E8EE00E861CE /* Sources */,
 				FA20361F1FB9E8EE00E861CE /* Frameworks */,
 				FA2036201FB9E8EE00E861CE /* Resources */,
+				ECF2A5449CD110730CAC6E0D /* [CP] Embed Pods Frameworks */,
+				11E04A6B46DFB0C2E4295AD8 /* [CP] Copy Pods Resources */,
+				FA19D3431FC5DFC80097B722 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2036321FB9E8EF00E861CE /* LaunchScreen.storyboard in Resources */,
-				FA693DF21FC32B4B00508DAE /* data.s3db in Resources */,
+				FA658A501FC5D60E00454934 /* data.s3db in Resources */,
 				FA20362F1FB9E8EF00E861CE /* Assets.xcassets in Resources */,
 				FA20362D1FB9E8EF00E861CE /* Main.storyboard in Resources */,
 			);
@@ -324,6 +357,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E04A6B46DFB0C2E4295AD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFudanCampus/Pods-MyFudanCampus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		767EECC94ACCBE43EEFD472D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFudanCampus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF2A5449CD110730CAC6E0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyFudanCampus/Pods-MyFudanCampus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFudanCampus/Pods-MyFudanCampus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA20361E1FB9E8EE00E861CE /* Sources */ = {
@@ -506,7 +593,9 @@
 		};
 		FA20364D1FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ACF1FA47ED8824CB796AC3B /* Pods-MyFudanCampus.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampus/Info.plist;
@@ -521,7 +610,9 @@
 		};
 		FA20364E1FB9E8EF00E861CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60DE0D9B68F87D4D201467CA /* Pods-MyFudanCampus.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampus/Info.plist;
