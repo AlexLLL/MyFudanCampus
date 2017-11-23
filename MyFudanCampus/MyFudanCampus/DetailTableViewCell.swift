@@ -10,6 +10,11 @@ import UIKit
 
 class DetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lessonName: UILabel!
+    @IBOutlet weak var teacherName: UILabel!
+    @IBOutlet weak var semesterName: UILabel!
+    @IBOutlet weak var creditPoint: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
