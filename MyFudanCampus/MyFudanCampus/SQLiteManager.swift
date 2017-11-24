@@ -33,7 +33,7 @@ class SQLiteManager: NSObject {
         
         openDB ();
         // 3.1 创建可变数组
-        let resultArray = NSMutableArray()
+        let dataBaseArray = NSMutableArray()
         
         // 3.2 执行sql
         SQLiteManager.shareInstance.dbQueue?.inDatabase { (db) in
@@ -53,11 +53,11 @@ class SQLiteManager: NSObject {
                     model.scoreValue = String(dbResult.string(forColumn: "scoreValue")!)
                     model.studentCount = Int(dbResult.int(forColumn: "studentCount"))
                     //print(model.lessonName)
-                    resultArray.add(model)
+                    dataBaseArray.add(model)
                 }
             }
         }
-        return resultArray
+        return dataBaseArray
     }
 }
 

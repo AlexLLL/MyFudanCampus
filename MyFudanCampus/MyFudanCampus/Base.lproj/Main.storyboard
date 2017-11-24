@@ -86,7 +86,7 @@
                                 <rect key="frame" x="16" y="284" width="343" height="334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scoreTableViewCell" rowHeight="73" id="L87-LW-LkM" customClass="DetailTableViewCell" customModule="MyFudanCampus" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scoreTableViewCell" rowHeight="73" id="L87-LW-LkM" customClass="scoreTableViewCell" customModule="MyFudanCampus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="73"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L87-LW-LkM" id="mO8-Ip-79V">
@@ -130,10 +130,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="creditPoint" destination="eYw-qN-ahG" id="syT-fs-Paf"/>
-                                            <outlet property="lessonName" destination="HOn-v2-9KN" id="1Xz-6y-f7G"/>
-                                            <outlet property="semesterName" destination="x6h-Wm-Xef" id="ufb-5d-mB0"/>
-                                            <outlet property="teacherName" destination="coi-hO-lpF" id="kwz-jA-the"/>
+                                            <outlet property="creditPoint" destination="eYw-qN-ahG" id="MnN-5n-GNa"/>
+                                            <outlet property="lessonName" destination="HOn-v2-9KN" id="cTf-DU-um0"/>
+                                            <outlet property="semesterName" destination="x6h-Wm-Xef" id="7G3-rT-sEF"/>
+                                            <outlet property="teacherName" destination="coi-hO-lpF" id="Sda-MD-NHl"/>
                                             <segue destination="dfa-GX-dU5" kind="show" id="BYM-7g-aVC"/>
                                         </connections>
                                     </tableViewCell>

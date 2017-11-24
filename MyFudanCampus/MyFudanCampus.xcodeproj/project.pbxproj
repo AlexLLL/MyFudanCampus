@@ -23,8 +23,8 @@
 		FA2A83C21FBF21DC00365C1F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83BC1FBF21DB00365C1F /* FMDatabasePool.m */; };
 		FA2A83C31FBF21DC00365C1F /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83BD1FBF21DB00365C1F /* FMResultSet.m */; };
 		FA2A83C71FBF221300365C1F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2A83C61FBF220A00365C1F /* libsqlite3.tbd */; };
-		FA2A83CD1FBF2E8000365C1F /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */; };
 		FA2A83CF1FBF2F6800365C1F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */; };
+		FA38A7061FC87E9000458D0D /* scoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38A7051FC87E9000458D0D /* scoreTableViewCell.swift */; };
 		FA658A501FC5D60E00454934 /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA658A4F1FC5D60E00454934 /* data.s3db */; };
 		FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */; };
 		FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA591C91FC084DA003C7AD4 /* scoreModel.swift */; };
@@ -92,8 +92,8 @@
 		FA2A83BD1FBF21DB00365C1F /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		FA2A83C61FBF220A00365C1F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		FA2A83C91FBF223D00365C1F /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FA38A7051FC87E9000458D0D /* scoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreTableViewCell.swift; sourceTree = "<group>"; };
 		FA658A4F1FC5D60E00454934 /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
 		FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		FAA591C91FC084DA003C7AD4 /* scoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreModel.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 				FA2036251FB9E8EE00E861CE /* AppDelegate.swift */,
 				FA2036271FB9E8EE00E861CE /* FirstViewController.swift */,
 				FA2036291FB9E8EF00E861CE /* SecondViewController.swift */,
-				FA2A83CC1FBF2E8000365C1F /* DetailTableViewCell.swift */,
+				FA38A7051FC87E9000458D0D /* scoreTableViewCell.swift */,
 				FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */,
 				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
 				FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */,
@@ -419,6 +419,7 @@
 			files = (
 				FA2A83CF1FBF2F6800365C1F /* DetailViewController.swift in Sources */,
 				FA2A83BF1FBF21DC00365C1F /* FMDatabaseQueue.m in Sources */,
+				FA38A7061FC87E9000458D0D /* scoreTableViewCell.swift in Sources */,
 				FA20362A1FB9E8EF00E861CE /* SecondViewController.swift in Sources */,
 				FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */,
 				FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */,
@@ -428,7 +429,6 @@
 				FA2A83C21FBF21DC00365C1F /* FMDatabasePool.m in Sources */,
 				FA2A83C31FBF21DC00365C1F /* FMResultSet.m in Sources */,
 				FA2036281FB9E8EE00E861CE /* FirstViewController.swift in Sources */,
-				FA2A83CD1FBF2E8000365C1F /* DetailTableViewCell.swift in Sources */,
 				FA2A83C01FBF21DC00365C1F /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

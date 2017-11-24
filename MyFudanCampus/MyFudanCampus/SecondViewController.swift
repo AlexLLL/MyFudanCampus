@@ -12,7 +12,7 @@ import Charts
 
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var resultArray = NSMutableArray()
     @IBOutlet weak var scoreTableView: UITableView!
     @IBOutlet weak var inputName: UITextField!
@@ -25,19 +25,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func btnSearch(_ sender: Any) {
         resultArray = search()
         scoreTableView.reloadData()
-        /*查看输出数组的log
-        let x = 0
-        let lessonName = (resultArray[x]as! resultModel).lessonName
-        let lessonCode = (resultArray[x]as! resultModel).lessonCode
-        let creditPoint = (resultArray[x]as! resultModel).creditPoint
-        let semesterName = (resultArray[x]as! resultModel).semesterName
-        let teacherName = (resultArray[x]as! resultModel).teacherName
-        let totalStudentNumber = (resultArray[x]as! resultModel).totalStudentNumber
-        let scoreNumber = (resultArray[x]as! resultModel).scoreArray
-        print("\(lessonName) \(lessonCode) \(creditPoint) \(semesterName) \(teacherName) \(totalStudentNumber) \(scoreNumber)")
-        */
+        //查看输出数组的log
+         let x = 0
+         let lessonName = (resultArray[x]as! resultModel).lessonName
+         let lessonCode = (resultArray[x]as! resultModel).lessonCode
+         let creditPoint = (resultArray[x]as! resultModel).creditPoint
+         let semesterName = (resultArray[x]as! resultModel).semesterName
+         let teacherName = (resultArray[x]as! resultModel).teacherName
+         let totalStudentNumber = (resultArray[x]as! resultModel).totalStudentNumber
+         let scoreNumber = (resultArray[x]as! resultModel).scoreArray
+         print("\(lessonName) \(lessonCode) \(creditPoint) \(semesterName) \(teacherName) \(totalStudentNumber) \(scoreNumber)")
+         //
     }
-
+    
     func search() -> NSMutableArray{
         //准备sql语句
         let mysql = "SELECT  Lesson.lessonName, Lesson.lessonCode, Lesson.creditPoint, Course.totalStudentNumber,Teacher.id AS teacherId, Teacher.name AS teacherName, Semester.name AS semesterName, Score.scoreValue, Score.studentCount FROM (Lesson INNER JOIN Course ON Lesson.id = Course.lesson_id) LEFT JOIN Score ON Course.id = Score.course_id LEFT JOIN Teacher ON Course.teacher_id = Teacher.id LEFT JOIN Semester ON Course.semester_id = Semester.id WHERE Lesson.lessonName like '%%\(inputName.text!)%%' ORDER BY Semester.name desc, Lesson.lessonCode asc, Score.scoreValue = 'A' DESC, Score.scoreValue = 'A-' DESC, Score.scoreValue = 'B+' DESC, Score.scoreValue = 'B' DESC, Score.scoreValue = 'B-' DESC, Score.scoreValue = 'C+' DESC, Score.scoreValue = 'C' DESC, Score.scoreValue = 'C-' DESC, Score.scoreValue = 'D+' DESC, Score.scoreValue = 'D' DESC, Score.scoreValue = 'D-' DESC, Score.scoreValue = 'P' DESC, Score.scoreValue = 'F' DESC"
@@ -92,7 +92,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return resultArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "scoreTableViewCell")as! DetailTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scoreTableViewCell")as! scoreTableViewCell
         var cellModel = resultModel()
         cellModel = resultArray.object(at: indexPath.row) as! resultModel
         cell.lessonName.text! = cellModel.lessonName
@@ -106,7 +106,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-
