@@ -20,6 +20,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        scoreTableView.dataSource = self
+        scoreTableView.delegate = self
     }
     
     @IBAction func btnSearch(_ sender: Any) {
@@ -44,47 +46,48 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let dataArray = SQLiteManager.shareInstance.queryDB(sql:mysql)
         var i = 0
         let array = NSMutableArray()
-        
-        while i<dataArray.count-1
+        if (dataArray != nil && dataArray.count != 0)
         {
-            var scoreArray = [Dictionary<String, Int>]()
-            var range = 0
-            var test = 0
-            test = i
-            //print("指针i是'\(test)'")
-            
-            while ((dataArray[test]as! scoreModel).lessonCode == (dataArray[test+range]as! scoreModel).lessonCode && (test+range)<dataArray.count-1)
+            while i<dataArray.count-1
             {
-                let key = (dataArray[test+range]as! scoreModel).scoreValue
-                let value = (dataArray[test+range]as! scoreModel).studentCount
-                var dict: [String: Int] = [String: Int]()
-                dict[key] = value
-                scoreArray.append(dict)
-                //print("操作指针是'\(test+range)'")
-                range = range+1
+                var scoreArray = [Dictionary<String, Int>]()
+                var range = 0
+                var test = 0
+                test = i
+                //print("指针i是'\(test)'")
+                
+                while ((dataArray[test]as! scoreModel).lessonCode == (dataArray[test+range]as! scoreModel).lessonCode && (test+range)<dataArray.count-1)
+                {
+                    let key = (dataArray[test+range]as! scoreModel).scoreValue
+                    let value = (dataArray[test+range]as! scoreModel).studentCount
+                    var dict: [String: Int] = [String: Int]()
+                    dict[key] = value
+                    scoreArray.append(dict)
+                    //print("操作指针是'\(test+range)'")
+                    range = range+1
+                }
+                
+                //将SQL数组转换成我们想要的数组
+                let model:resultModel = resultModel()
+                model.lessonName = (dataArray[test]as! scoreModel).lessonName
+                model.lessonCode = (dataArray[test]as! scoreModel).lessonCode
+                model.creditPoint = (dataArray[test]as! scoreModel).creditPoint
+                model.semesterName = (dataArray[test]as! scoreModel).semesterName
+                model.teacherName = (dataArray[test]as! scoreModel).teacherName
+                model.totalStudentNumber = (dataArray[test]as! scoreModel).totalStudentNumber
+                model.scoreArray = scoreArray
+                array.add(model)
+                i = i+range
+                //print("区间range是'\(range)'")
             }
-            
-            //将SQL数组转换成我们想要的数组
-            let model:resultModel = resultModel()
-            model.lessonName = (dataArray[test]as! scoreModel).lessonName
-            model.lessonCode = (dataArray[test]as! scoreModel).lessonCode
-            model.creditPoint = (dataArray[test]as! scoreModel).creditPoint
-            model.semesterName = (dataArray[test]as! scoreModel).semesterName
-            model.teacherName = (dataArray[test]as! scoreModel).teacherName
-            model.totalStudentNumber = (dataArray[test]as! scoreModel).totalStudentNumber
-            model.scoreArray = scoreArray
-            array.add(model)
-            i = i+range
-            //print("区间range是'\(range)'")
-        }
         
-        //最后一个score词典少了一个尾部，需要手动补充
-        let key = (dataArray[dataArray.count-1]as! scoreModel).scoreValue
-        let value = (dataArray[dataArray.count-1]as! scoreModel).studentCount
-        var dict: [String: Int] = [String: Int]()
-        dict[key] = value
-        (array[array.count-1]as! resultModel).scoreArray.append(dict)
-        //
+            //最后一个score词典少了一个尾部，需要手动补充
+            let key = (dataArray[dataArray.count-1]as! scoreModel).scoreValue
+            let value = (dataArray[dataArray.count-1]as! scoreModel).studentCount
+            var dict: [String: Int] = [String: Int]()
+            dict[key] = value
+            (array[array.count-1]as! resultModel).scoreArray.append(dict)
+        }
         return array
     }
     
