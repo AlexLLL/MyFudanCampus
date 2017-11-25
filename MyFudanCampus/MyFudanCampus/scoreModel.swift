@@ -26,5 +26,7 @@ class resultModel: NSObject {
     var totalStudentNumber:Int = Int()
     var teacherName:String = String()
     var semesterName:String = String()
+    var scoreVaule: [String] = [String]()
+    var scoreCount: [Double] = [Double]()
     var scoreArray: [Dictionary<String, Int>] = [Dictionary<String, Int>]()
 }

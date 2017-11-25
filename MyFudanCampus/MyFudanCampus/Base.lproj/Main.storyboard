@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -204,92 +203,110 @@
             <objects>
                 <viewController id="dfa-GX-dU5" customClass="DetailViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iP2-i8-rMV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lessonName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-8P-sr4">
-                                <rect key="frame" x="37" y="106" width="195" height="15"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="w4a-PP-CHi"/>
-                                </constraints>
+                                <rect key="frame" x="16" y="138" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lessonCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saL-Il-ir1">
-                                <rect key="frame" x="246" y="104" width="113" height="15"/>
+                                <rect key="frame" x="246" y="140" width="113" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="9m4-sL-9lU"/>
+                                    <constraint firstAttribute="height" constant="15" id="TON-NZ-afp"/>
+                                    <constraint firstAttribute="width" constant="113" id="rzg-2s-fZu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="semesterName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbs-1r-rz8">
-                                <rect key="frame" x="37" y="134" width="160" height="17"/>
+                                <rect key="frame" x="16" y="169" width="160" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teacherName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geH-8k-dkq">
-                                <rect key="frame" x="246" y="134" width="113" height="17"/>
+                                <rect key="frame" x="246" y="169" width="113" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="creditPoint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtW-v0-856">
-                                <rect key="frame" x="37" y="161" width="160" height="17"/>
+                                <rect key="frame" x="16" y="197" width="160" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he9-0r-mWH">
+                                <rect key="frame" x="246" y="197" width="113" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="scorePrint" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MJk-Ft-Ipf">
+                                <rect key="frame" x="14" y="222" width="343" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-4q-kGt" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="262" width="343" height="356"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="左侧边轻拉，返回主界面" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qln-zu-Ykd">
-                                <rect key="frame" x="32" y="73" width="157" height="31"/>
+                                <rect key="frame" x="14" y="101" width="145" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he9-0r-mWH">
-                                <rect key="frame" x="246" y="161" width="113" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="geH-8k-dkq" firstAttribute="leading" secondItem="he9-0r-mWH" secondAttribute="leading" id="0Li-Ja-mlZ"/>
-                            <constraint firstItem="geH-8k-dkq" firstAttribute="trailing" secondItem="he9-0r-mWH" secondAttribute="trailing" id="3rs-bS-md0"/>
-                            <constraint firstItem="bbs-1r-rz8" firstAttribute="top" secondItem="ePx-8P-sr4" secondAttribute="bottom" constant="13" id="8QR-2V-mEy"/>
-                            <constraint firstItem="ZtW-v0-856" firstAttribute="top" secondItem="bbs-1r-rz8" secondAttribute="bottom" constant="10" id="8qO-gV-g5H"/>
-                            <constraint firstItem="ePx-8P-sr4" firstAttribute="leading" secondItem="BVR-BE-E5L" secondAttribute="leading" constant="37" id="9WS-yd-N4W"/>
-                            <constraint firstItem="saL-Il-ir1" firstAttribute="leading" secondItem="geH-8k-dkq" secondAttribute="leading" id="9sZ-iD-CIo"/>
-                            <constraint firstItem="BVR-BE-E5L" firstAttribute="trailing" secondItem="qln-zu-Ykd" secondAttribute="trailing" constant="186" id="D82-es-bEW"/>
-                            <constraint firstItem="qln-zu-Ykd" firstAttribute="top" secondItem="BVR-BE-E5L" secondAttribute="top" constant="9" id="FOX-a5-GY6"/>
-                            <constraint firstItem="ePx-8P-sr4" firstAttribute="baseline" secondItem="saL-Il-ir1" secondAttribute="firstBaseline" id="JRN-2j-OI6"/>
-                            <constraint firstItem="qln-zu-Ykd" firstAttribute="leading" secondItem="BVR-BE-E5L" secondAttribute="leading" constant="32" id="OO1-F0-YEy"/>
-                            <constraint firstItem="geH-8k-dkq" firstAttribute="top" secondItem="saL-Il-ir1" secondAttribute="bottom" constant="15" id="QBo-xa-Dx5"/>
-                            <constraint firstItem="geH-8k-dkq" firstAttribute="baseline" secondItem="bbs-1r-rz8" secondAttribute="firstBaseline" id="UTB-i2-Pl0"/>
-                            <constraint firstItem="bbs-1r-rz8" firstAttribute="baseline" secondItem="geH-8k-dkq" secondAttribute="firstBaseline" id="Uw4-wl-658"/>
-                            <constraint firstItem="bbs-1r-rz8" firstAttribute="trailing" secondItem="ZtW-v0-856" secondAttribute="trailing" id="Xad-jE-nIP"/>
-                            <constraint firstItem="saL-Il-ir1" firstAttribute="top" secondItem="BVR-BE-E5L" secondAttribute="top" constant="40" id="aWg-l1-eqi"/>
-                            <constraint firstItem="geH-8k-dkq" firstAttribute="leading" secondItem="bbs-1r-rz8" secondAttribute="trailing" constant="49" id="mJX-0D-ZOn"/>
-                            <constraint firstItem="bbs-1r-rz8" firstAttribute="leading" secondItem="ZtW-v0-856" secondAttribute="leading" id="maC-Si-Lip"/>
-                            <constraint firstItem="ePx-8P-sr4" firstAttribute="leading" secondItem="bbs-1r-rz8" secondAttribute="leading" id="nJo-Av-03L"/>
-                            <constraint firstItem="saL-Il-ir1" firstAttribute="trailing" secondItem="geH-8k-dkq" secondAttribute="trailing" id="nMf-PB-WAz"/>
-                            <constraint firstItem="saL-Il-ir1" firstAttribute="trailing" secondItem="iP2-i8-rMV" secondAttribute="trailingMargin" id="oKM-JA-VG6"/>
-                            <constraint firstItem="ZtW-v0-856" firstAttribute="baseline" secondItem="he9-0r-mWH" secondAttribute="baseline" id="qDv-8c-uy7"/>
-                            <constraint firstItem="saL-Il-ir1" firstAttribute="leading" secondItem="ePx-8P-sr4" secondAttribute="trailing" constant="14" id="rbh-GS-VtR"/>
-                            <constraint firstItem="ePx-8P-sr4" firstAttribute="top" secondItem="qln-zu-Ykd" secondAttribute="bottom" constant="2" id="tRY-Ah-1WP"/>
+                            <constraint firstItem="saL-Il-ir1" firstAttribute="leading" secondItem="geH-8k-dkq" secondAttribute="leading" id="1AJ-Nh-NLv"/>
+                            <constraint firstItem="geH-8k-dkq" firstAttribute="leading" secondItem="bbs-1r-rz8" secondAttribute="trailing" constant="70" id="6zn-4Y-zKJ"/>
+                            <constraint firstItem="BVR-BE-E5L" firstAttribute="trailing" secondItem="MJk-Ft-Ipf" secondAttribute="trailing" constant="18" id="7pM-WL-QEV"/>
+                            <constraint firstItem="BVR-BE-E5L" firstAttribute="trailing" secondItem="qln-zu-Ykd" secondAttribute="trailing" constant="216" id="AFd-0h-TDS"/>
+                            <constraint firstItem="qln-zu-Ykd" firstAttribute="leading" secondItem="BVR-BE-E5L" secondAttribute="leading" constant="14" id="Dgw-Wd-Xll"/>
+                            <constraint firstItem="MJk-Ft-Ipf" firstAttribute="leading" secondItem="qln-zu-Ykd" secondAttribute="leading" id="EUZ-Ji-vW3"/>
+                            <constraint firstItem="ePx-8P-sr4" firstAttribute="top" secondItem="qln-zu-Ykd" secondAttribute="bottom" constant="8" symbolic="YES" id="GxB-AB-hVP"/>
+                            <constraint firstItem="pkr-4q-kGt" firstAttribute="top" secondItem="ZtW-v0-856" secondAttribute="bottom" constant="48" id="HwF-2h-Mjr"/>
+                            <constraint firstItem="ZtW-v0-856" firstAttribute="baseline" secondItem="he9-0r-mWH" secondAttribute="baseline" id="Ijr-38-Fah"/>
+                            <constraint firstItem="ePx-8P-sr4" firstAttribute="leading" secondItem="iP2-i8-rMV" secondAttribute="leadingMargin" id="KGf-WR-AZX"/>
+                            <constraint firstItem="bbs-1r-rz8" firstAttribute="trailing" secondItem="ZtW-v0-856" secondAttribute="trailing" id="Nvi-gU-A2m"/>
+                            <constraint firstItem="geH-8k-dkq" firstAttribute="trailing" secondItem="he9-0r-mWH" secondAttribute="trailing" id="QM5-uS-2BM"/>
+                            <constraint firstItem="ZtW-v0-856" firstAttribute="top" secondItem="bbs-1r-rz8" secondAttribute="bottom" constant="11" id="Vdm-7I-rOY"/>
+                            <constraint firstItem="saL-Il-ir1" firstAttribute="trailing" secondItem="iP2-i8-rMV" secondAttribute="trailingMargin" id="Y0u-BC-Kbr"/>
+                            <constraint firstItem="BVR-BE-E5L" firstAttribute="bottom" secondItem="MJk-Ft-Ipf" secondAttribute="bottom" constant="355" id="Z53-a9-t9v"/>
+                            <constraint firstItem="bbs-1r-rz8" firstAttribute="baseline" secondItem="geH-8k-dkq" secondAttribute="baseline" id="bkY-IP-4b1"/>
+                            <constraint firstItem="ePx-8P-sr4" firstAttribute="baseline" secondItem="saL-Il-ir1" secondAttribute="baseline" id="cDU-Xq-u6h"/>
+                            <constraint firstItem="pkr-4q-kGt" firstAttribute="trailing" secondItem="he9-0r-mWH" secondAttribute="trailing" id="cGV-Zd-iCf"/>
+                            <constraint firstItem="geH-8k-dkq" firstAttribute="leading" secondItem="he9-0r-mWH" secondAttribute="leading" id="d97-3V-agI"/>
+                            <constraint firstItem="saL-Il-ir1" firstAttribute="trailing" secondItem="geH-8k-dkq" secondAttribute="trailing" id="dWb-Wr-QBs"/>
+                            <constraint firstItem="bbs-1r-rz8" firstAttribute="top" secondItem="ePx-8P-sr4" secondAttribute="bottom" constant="14" id="f4t-FY-gi9"/>
+                            <constraint firstItem="saL-Il-ir1" firstAttribute="leading" secondItem="ePx-8P-sr4" secondAttribute="trailing" constant="35" id="ivn-kQ-wpU"/>
+                            <constraint firstItem="bbs-1r-rz8" firstAttribute="leading" secondItem="ZtW-v0-856" secondAttribute="leading" id="m2W-xB-bbu"/>
+                            <constraint firstItem="ePx-8P-sr4" firstAttribute="leading" secondItem="bbs-1r-rz8" secondAttribute="leading" id="mCJ-ZW-bxd"/>
+                            <constraint firstItem="pkr-4q-kGt" firstAttribute="leading" secondItem="ZtW-v0-856" secondAttribute="leading" id="n6z-pn-9Pp"/>
+                            <constraint firstItem="qln-zu-Ykd" firstAttribute="top" secondItem="BVR-BE-E5L" secondAttribute="top" constant="37" id="nV0-h7-SJ4"/>
+                            <constraint firstItem="saL-Il-ir1" firstAttribute="top" secondItem="BVR-BE-E5L" secondAttribute="top" constant="76" id="obn-Ul-qje"/>
+                            <constraint firstItem="pkr-4q-kGt" firstAttribute="bottom" secondItem="BVR-BE-E5L" secondAttribute="bottom" id="plQ-v3-BMC"/>
+                            <constraint firstItem="MJk-Ft-Ipf" firstAttribute="top" secondItem="ZtW-v0-856" secondAttribute="bottom" constant="8" symbolic="YES" id="uZc-5s-XB2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BVR-BE-E5L"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
                         <outlet property="creditPoint" destination="ZtW-v0-856" id="4i1-2a-hD1"/>
                         <outlet property="lessonCode" destination="saL-Il-ir1" id="WFV-RT-GA2"/>
                         <outlet property="lessonName" destination="ePx-8P-sr4" id="3fy-rU-C1f"/>
+                        <outlet property="pieChartView" destination="pkr-4q-kGt" id="bzW-ix-ygo"/>
+                        <outlet property="scoreView" destination="MJk-Ft-Ipf" id="sQA-Ij-c9q"/>
                         <outlet property="semesterName" destination="bbs-1r-rz8" id="WXH-5a-MAf"/>
                         <outlet property="teacherName" destination="geH-8k-dkq" id="B4T-Ig-mMg"/>
                         <outlet property="totalStudentNumber" destination="he9-0r-mWH" id="8HU-ZV-BkC"/>
