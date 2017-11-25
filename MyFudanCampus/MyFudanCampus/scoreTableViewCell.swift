@@ -12,8 +12,10 @@ class scoreTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lessonName: UILabel!
     @IBOutlet weak var teacherName: UILabel!
-    @IBOutlet weak var creditPoint: UILabel!
+    
+    @IBOutlet weak var lessonCode: UILabel!
     @IBOutlet weak var semesterName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
