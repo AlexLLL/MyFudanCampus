@@ -60,8 +60,8 @@ class FirstViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
         navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         let navigationItem = UINavigationItem(title: "Careers | Fudan");
         navBar.setItems([navigationItem], animated: false);
-        //创建导航项的按钮
         
+        //创建导航项的按钮
         func showNavigationItem(){
             
             let goBackBtn = UIButton.init()

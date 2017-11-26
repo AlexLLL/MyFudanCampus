@@ -27,7 +27,9 @@
 		FA38A7061FC87E9000458D0D /* scoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38A7051FC87E9000458D0D /* scoreTableViewCell.swift */; };
 		FA658A501FC5D60E00454934 /* data.s3db in Resources */ = {isa = PBXBuildFile; fileRef = FA658A4F1FC5D60E00454934 /* data.s3db */; };
 		FA7D72CE1FBFED23002B8A2E /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */; };
+		FA99EAF21FCA8208007026E0 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99EAF11FCA8208007026E0 /* NewsViewController.swift */; };
 		FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA591C91FC084DA003C7AD4 /* scoreModel.swift */; };
+		FABCF7EE1FCA8AD70039420A /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCF7ED1FCA8AD70039420A /* newsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +98,9 @@
 		FA38A7051FC87E9000458D0D /* scoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreTableViewCell.swift; sourceTree = "<group>"; };
 		FA658A4F1FC5D60E00454934 /* data.s3db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.s3db; sourceTree = "<group>"; };
 		FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		FA99EAF11FCA8208007026E0 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		FAA591C91FC084DA003C7AD4 /* scoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreModel.swift; sourceTree = "<group>"; };
+		FABCF7ED1FCA8AD70039420A /* newsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,16 +166,18 @@
 			children = (
 				FA658A4F1FC5D60E00454934 /* data.s3db */,
 				FA2036251FB9E8EE00E861CE /* AppDelegate.swift */,
-				FA2036271FB9E8EE00E861CE /* FirstViewController.swift */,
+				FA99EAF11FCA8208007026E0 /* NewsViewController.swift */,
 				FA2036291FB9E8EF00E861CE /* SecondViewController.swift */,
+				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
+				FABCF7ED1FCA8AD70039420A /* newsTableViewCell.swift */,
 				FA38A7051FC87E9000458D0D /* scoreTableViewCell.swift */,
 				FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */,
-				FA2036551FB9F83C00E861CE /* ThirdViewController.swift */,
 				FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */,
 				FAA591C91FC084DA003C7AD4 /* scoreModel.swift */,
 				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
 				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
 				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
+				FA2036271FB9E8EE00E861CE /* FirstViewController.swift */,
 				FA2036331FB9E8EF00E861CE /* Info.plist */,
 				FA2A83B21FBF21DB00365C1F /* fmdb */,
 				FA2A83C91FBF223D00365C1F /* Header.h */,
@@ -426,8 +432,10 @@
 				FA2036261FB9E8EE00E861CE /* AppDelegate.swift in Sources */,
 				FA2A83C11FBF21DC00365C1F /* FMDatabase.m in Sources */,
 				FA2036561FB9F83C00E861CE /* ThirdViewController.swift in Sources */,
+				FABCF7EE1FCA8AD70039420A /* newsTableViewCell.swift in Sources */,
 				FA2A83C21FBF21DC00365C1F /* FMDatabasePool.m in Sources */,
 				FA2A83C31FBF21DC00365C1F /* FMResultSet.m in Sources */,
+				FA99EAF21FCA8208007026E0 /* NewsViewController.swift in Sources */,
 				FA2036281FB9E8EE00E861CE /* FirstViewController.swift in Sources */,
 				FA2A83C01FBF21DC00365C1F /* FMDatabaseAdditions.m in Sources */,
 			);

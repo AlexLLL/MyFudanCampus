@@ -30,3 +30,9 @@ class resultModel: NSObject {
     var scoreCount: [Double] = [Double]()
     var scoreArray: [Dictionary<String, Int>] = [Dictionary<String, Int>]()
 }
+
+class newsModel: NSObject {
+    var name = String()
+    var date = String()
+    var location = String()
+}
