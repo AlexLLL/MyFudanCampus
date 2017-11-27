@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,6 +14,10 @@
         <scene sceneID="EyS-uP-TfT">
             <objects>
                 <viewController id="BVV-iy-KXZ" customClass="NewsViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BvC-P9-y9q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Li6-wa-eF5"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Vb-ob-ISg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,12 +82,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="top" secondItem="ebW-Qe-eG9" secondAttribute="top" constant="60" id="4hz-XK-Nwb"/>
-                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="leading" secondItem="ebW-Qe-eG9" secondAttribute="leading" id="RCo-EO-qCX"/>
-                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="trailing" secondItem="ebW-Qe-eG9" secondAttribute="trailing" id="buD-Fj-wLL"/>
-                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="bottom" secondItem="ebW-Qe-eG9" secondAttribute="bottom" id="yuB-hB-3pl"/>
+                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="top" secondItem="BvC-P9-y9q" secondAttribute="bottom" constant="60" id="4hz-XK-Nwb"/>
+                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="leading" secondItem="9Vb-ob-ISg" secondAttribute="leading" id="RCo-EO-qCX"/>
+                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="trailing" secondItem="9Vb-ob-ISg" secondAttribute="trailing" id="buD-Fj-wLL"/>
+                            <constraint firstItem="r0H-HM-i9Q" firstAttribute="bottom" secondItem="Li6-wa-eF5" secondAttribute="top" id="yuB-hB-3pl"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ebW-Qe-eG9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="宣讲会" image="first" id="MT7-Me-IOn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -100,11 +102,14 @@
         <scene sceneID="13g-BJ-Unu">
             <objects>
                 <viewController id="6O9-bW-ExU" customClass="ThirdViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qWn-OS-Yy5"/>
+                        <viewControllerLayoutGuide type="bottom" id="ur9-dt-jme"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4Gr-Gs-l0d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xso-Ge-1fu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="二手市场" image="second" id="pIU-Cr-dPu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -117,6 +122,10 @@
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qZQ-Qe-Xku"/>
+                        <viewControllerLayoutGuide type="bottom" id="rIf-6P-xoo"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,10 +247,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qH6-hW-8aA" firstAttribute="trailing" secondItem="i5w-CP-Nhi" secondAttribute="trailing" id="0s1-gE-XoT"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="R4P-4H-yqv" secondAttribute="trailing" constant="16" id="3JQ-y5-EPZ"/>
+                            <constraint firstAttribute="trailing" secondItem="R4P-4H-yqv" secondAttribute="trailing" constant="16" id="3JQ-y5-EPZ"/>
                             <constraint firstItem="qH6-hW-8aA" firstAttribute="top" secondItem="qVU-1W-EgK" secondAttribute="bottom" constant="8" symbolic="YES" id="66n-vS-rjw"/>
                             <constraint firstItem="4J5-Li-5K5" firstAttribute="top" secondItem="i5w-CP-Nhi" secondAttribute="bottom" constant="8" id="EuT-Yi-EoC"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="4J5-Li-5K5" secondAttribute="trailing" constant="16" id="ID4-W9-yDk"/>
+                            <constraint firstAttribute="trailing" secondItem="4J5-Li-5K5" secondAttribute="trailing" constant="16" id="ID4-W9-yDk"/>
                             <constraint firstItem="i5w-CP-Nhi" firstAttribute="leading" secondItem="R4P-4H-yqv" secondAttribute="leading" id="JZj-KK-3sq"/>
                             <constraint firstItem="i5w-CP-Nhi" firstAttribute="trailing" secondItem="4J5-Li-5K5" secondAttribute="trailing" id="L15-xS-kux"/>
                             <constraint firstItem="qVU-1W-EgK" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Qag-rM-3ZU"/>
@@ -249,11 +258,10 @@
                             <constraint firstItem="R4P-4H-yqv" firstAttribute="top" secondItem="4J5-Li-5K5" secondAttribute="bottom" constant="7" id="hcn-5E-nQd"/>
                             <constraint firstItem="qH6-hW-8aA" firstAttribute="leading" secondItem="i5w-CP-Nhi" secondAttribute="leading" id="iUO-zj-O1w"/>
                             <constraint firstItem="qVU-1W-EgK" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="oma-k0-BIj"/>
-                            <constraint firstItem="R4P-4H-yqv" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="pDg-W4-qEr"/>
-                            <constraint firstItem="R4P-4H-yqv" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="tXY-GV-GLB"/>
-                            <constraint firstItem="qVU-1W-EgK" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="77" id="wwj-UE-5NZ"/>
+                            <constraint firstItem="R4P-4H-yqv" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="16" id="pDg-W4-qEr"/>
+                            <constraint firstItem="R4P-4H-yqv" firstAttribute="bottom" secondItem="rIf-6P-xoo" secondAttribute="top" id="tXY-GV-GLB"/>
+                            <constraint firstItem="qVU-1W-EgK" firstAttribute="top" secondItem="qZQ-Qe-Xku" secondAttribute="bottom" constant="77" id="wwj-UE-5NZ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" id="agY-LY-yTG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -270,6 +278,10 @@
         <scene sceneID="pbp-78-L5C">
             <objects>
                 <viewController id="dfa-GX-dU5" customClass="DetailViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YbZ-9B-sWr"/>
+                        <viewControllerLayoutGuide type="bottom" id="apv-DQ-Ob1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iP2-i8-rMV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,9 +350,9 @@
                         <constraints>
                             <constraint firstItem="saL-Il-ir1" firstAttribute="leading" secondItem="geH-8k-dkq" secondAttribute="leading" id="1AJ-Nh-NLv"/>
                             <constraint firstItem="geH-8k-dkq" firstAttribute="leading" secondItem="bbs-1r-rz8" secondAttribute="trailing" constant="70" id="6zn-4Y-zKJ"/>
-                            <constraint firstItem="BVR-BE-E5L" firstAttribute="trailing" secondItem="MJk-Ft-Ipf" secondAttribute="trailing" constant="18" id="7pM-WL-QEV"/>
-                            <constraint firstItem="BVR-BE-E5L" firstAttribute="trailing" secondItem="qln-zu-Ykd" secondAttribute="trailing" constant="216" id="AFd-0h-TDS"/>
-                            <constraint firstItem="qln-zu-Ykd" firstAttribute="leading" secondItem="BVR-BE-E5L" secondAttribute="leading" constant="14" id="Dgw-Wd-Xll"/>
+                            <constraint firstAttribute="trailing" secondItem="MJk-Ft-Ipf" secondAttribute="trailing" constant="18" id="7pM-WL-QEV"/>
+                            <constraint firstAttribute="trailing" secondItem="qln-zu-Ykd" secondAttribute="trailing" constant="216" id="AFd-0h-TDS"/>
+                            <constraint firstItem="qln-zu-Ykd" firstAttribute="leading" secondItem="iP2-i8-rMV" secondAttribute="leading" constant="14" id="Dgw-Wd-Xll"/>
                             <constraint firstItem="MJk-Ft-Ipf" firstAttribute="leading" secondItem="qln-zu-Ykd" secondAttribute="leading" id="EUZ-Ji-vW3"/>
                             <constraint firstItem="ePx-8P-sr4" firstAttribute="top" secondItem="qln-zu-Ykd" secondAttribute="bottom" constant="8" symbolic="YES" id="GxB-AB-hVP"/>
                             <constraint firstItem="pkr-4q-kGt" firstAttribute="top" secondItem="ZtW-v0-856" secondAttribute="bottom" constant="48" id="HwF-2h-Mjr"/>
@@ -350,7 +362,7 @@
                             <constraint firstItem="geH-8k-dkq" firstAttribute="trailing" secondItem="he9-0r-mWH" secondAttribute="trailing" id="QM5-uS-2BM"/>
                             <constraint firstItem="ZtW-v0-856" firstAttribute="top" secondItem="bbs-1r-rz8" secondAttribute="bottom" constant="11" id="Vdm-7I-rOY"/>
                             <constraint firstItem="saL-Il-ir1" firstAttribute="trailing" secondItem="iP2-i8-rMV" secondAttribute="trailingMargin" id="Y0u-BC-Kbr"/>
-                            <constraint firstItem="BVR-BE-E5L" firstAttribute="bottom" secondItem="MJk-Ft-Ipf" secondAttribute="bottom" constant="355" id="Z53-a9-t9v"/>
+                            <constraint firstItem="apv-DQ-Ob1" firstAttribute="top" secondItem="MJk-Ft-Ipf" secondAttribute="bottom" constant="355" id="Z53-a9-t9v"/>
                             <constraint firstItem="bbs-1r-rz8" firstAttribute="baseline" secondItem="geH-8k-dkq" secondAttribute="baseline" id="bkY-IP-4b1"/>
                             <constraint firstItem="ePx-8P-sr4" firstAttribute="baseline" secondItem="saL-Il-ir1" secondAttribute="baseline" id="cDU-Xq-u6h"/>
                             <constraint firstItem="pkr-4q-kGt" firstAttribute="trailing" secondItem="he9-0r-mWH" secondAttribute="trailing" id="cGV-Zd-iCf"/>
@@ -361,12 +373,11 @@
                             <constraint firstItem="bbs-1r-rz8" firstAttribute="leading" secondItem="ZtW-v0-856" secondAttribute="leading" id="m2W-xB-bbu"/>
                             <constraint firstItem="ePx-8P-sr4" firstAttribute="leading" secondItem="bbs-1r-rz8" secondAttribute="leading" id="mCJ-ZW-bxd"/>
                             <constraint firstItem="pkr-4q-kGt" firstAttribute="leading" secondItem="ZtW-v0-856" secondAttribute="leading" id="n6z-pn-9Pp"/>
-                            <constraint firstItem="qln-zu-Ykd" firstAttribute="top" secondItem="BVR-BE-E5L" secondAttribute="top" constant="37" id="nV0-h7-SJ4"/>
-                            <constraint firstItem="saL-Il-ir1" firstAttribute="top" secondItem="BVR-BE-E5L" secondAttribute="top" constant="76" id="obn-Ul-qje"/>
-                            <constraint firstItem="pkr-4q-kGt" firstAttribute="bottom" secondItem="BVR-BE-E5L" secondAttribute="bottom" id="plQ-v3-BMC"/>
+                            <constraint firstItem="qln-zu-Ykd" firstAttribute="top" secondItem="YbZ-9B-sWr" secondAttribute="bottom" constant="37" id="nV0-h7-SJ4"/>
+                            <constraint firstItem="saL-Il-ir1" firstAttribute="top" secondItem="YbZ-9B-sWr" secondAttribute="bottom" constant="76" id="obn-Ul-qje"/>
+                            <constraint firstItem="pkr-4q-kGt" firstAttribute="bottom" secondItem="apv-DQ-Ob1" secondAttribute="top" id="plQ-v3-BMC"/>
                             <constraint firstItem="MJk-Ft-Ipf" firstAttribute="top" secondItem="ZtW-v0-856" secondAttribute="bottom" constant="8" symbolic="YES" id="uZc-5s-XB2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="BVR-BE-E5L"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <connections>
@@ -388,13 +399,16 @@
         <scene sceneID="1Y2-eq-Kdo">
             <objects>
                 <viewController id="wn8-jK-neg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qb2-qj-VOV"/>
+                        <viewControllerLayoutGuide type="bottom" id="UJp-eq-T6d"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WNv-ya-Kbp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="psW-c0-nsG">
-                                <rect key="frame" x="16" y="161" width="343" height="278"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="psW-c0-nsG">
+                                <rect key="frame" x="16" y="161" width="343" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">                                   
 这个App是基于hackerzhou学长的数据库完成的，非常感谢学长的帮忙。因为学校没有提供相应的API，所以很多功能都比较简陋，望大家见谅。
@@ -403,29 +417,46 @@
 
 欢迎大家提供想法和建议，如果你能提供相应的资源是最好的。当然，更期待技术大牛提供最新的数据库。我的联系方式：lyx3717@126.com
 </string>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-bk-SVw">
-                                <rect key="frame" x="16" y="468" width="343" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-bk-SVw">
+                                <rect key="frame" x="16" y="453" width="343" height="165"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="bhG-Pj-gQx"/>
+                                </constraints>
                                 <string key="text">五角场文秘职业技术学院
-										             2010级见习魔法师
-										             AlexLLL 参上</string>
+             2010级见习魔法师
+             AlexLLL 参上</string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="关于" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Pf-fQl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="关于" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Pf-fQl">
                                 <rect key="frame" x="16" y="98" width="343" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="8Aw-yI-PNP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7gW-t9-8kb"/>
+                        <constraints>
+                            <constraint firstItem="psW-c0-nsG" firstAttribute="leading" secondItem="FSx-bk-SVw" secondAttribute="leading" id="29L-zd-WBq"/>
+                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="trailing" secondItem="WNv-ya-Kbp" secondAttribute="trailingMargin" id="AbW-jA-PId"/>
+                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="trailing" secondItem="psW-c0-nsG" secondAttribute="trailing" id="IHu-qC-aUv"/>
+                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="top" secondItem="qb2-qj-VOV" secondAttribute="bottom" constant="78" id="JDA-p5-imO"/>
+                            <constraint firstItem="psW-c0-nsG" firstAttribute="trailing" secondItem="FSx-bk-SVw" secondAttribute="trailing" id="kr9-7k-3LA"/>
+                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="leading" secondItem="psW-c0-nsG" secondAttribute="leading" id="mUv-OP-U7J"/>
+                            <constraint firstItem="FSx-bk-SVw" firstAttribute="top" secondItem="psW-c0-nsG" secondAttribute="bottom" constant="68" id="mjF-Bf-v47"/>
+                            <constraint firstItem="psW-c0-nsG" firstAttribute="top" secondItem="yjn-Pf-fQl" secondAttribute="bottom" constant="26" id="oyt-4p-nuq"/>
+                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="leading" secondItem="WNv-ya-Kbp" secondAttribute="leadingMargin" id="umM-eZ-INM"/>
+                            <constraint firstItem="FSx-bk-SVw" firstAttribute="bottom" secondItem="UJp-eq-T6d" secondAttribute="top" id="vkp-7B-aoj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="关于" image="Fourth" id="wUv-yA-4t0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

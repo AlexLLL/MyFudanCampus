@@ -13,68 +13,26 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var newsTableView: UITableView!
     var resultArray = NSMutableArray()
+    var htmlStr = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationBar()
-        resultArray = getNewsArray()
-        newsTableView.dataSource = self
-        newsTableView.delegate = self
-        newsTableView.reloadData()
-    }
-    //正则匹配函数，返回的是一个String数组
-    func matches(for regex: String, in text: String) -> [String] {
-        do {
-            let regex = try NSRegularExpression(pattern: regex)
-            let nsString = text as NSString
-            let results = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length))
-            return results.map { nsString.substring(with: $0.range)}
-        } catch let error {
-            print("invalid regex: \(error.localizedDescription)")
-            return []
-        }
-    }
-    
-    func getNewsArray() -> NSMutableArray {
-        var htmlStr = ""
-        var errorString = ""
-        //创建URL对象
-        let urlString:String="http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=50&list=true"
-        let url = URL(string:urlString)
-        //创建请求对象
-        let request = URLRequest(url: url!)
-        let session = URLSession.shared
-        let semaphore = DispatchSemaphore(value: 0)
-        let dataTask = session.dataTask(with: request,
-                                        completionHandler: {(data, response, error) -> Void in
-                                            if error != nil{
-                                                errorString = "Error! 请联网并刷新重试"
-                                            }else{
-                                                htmlStr = String(data: data!, encoding: String.Encoding.utf8)!
-                                                //print(htmlStr)
-                                            }
-                                            
-                                            semaphore.signal()
-        }) as URLSessionTask
         
-        //使用resume方法启动任务
-        dataTask.resume()
-        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
-        print("数据加载完毕！")
-        
-        let newsArray = NSMutableArray()
-        if errorString == ""
-        {
+        getforData { getString in
+            // and here you get the "returned" value from the asynchronous task
+            self.htmlStr = getString
+            let newsArray = NSMutableArray()
+            
             let pattern1 = "(1\" title=\")(.*?)(\">)"
-            let matched1 = matches(for: pattern1, in: htmlStr)
+            let matched1 = self.matches(for: pattern1, in: self.htmlStr)
             let pattern2 = "(m3\">)(.*?)(</)"
-            let matched2 = matches(for: pattern2, in: htmlStr)
+            let matched2 = self.matches(for: pattern2, in: self.htmlStr)
             let pattern3 = "(5\" title=\")(.*?)(\">)"
-            let matched3 = matches(for: pattern3, in: htmlStr)
+            let matched3 = self.matches(for: pattern3, in: self.htmlStr)
             let pattern4 = "(m4\">)(.*?)(</)"
-            let matched4 = matches(for: pattern4, in: htmlStr)
-        
+            let matched4 = self.matches(for: pattern4, in: self.htmlStr)
+            
             var i = 0
             while i<matched1.count {
                 let model:newsModel = newsModel()
@@ -96,14 +54,42 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 newsArray.add(model)
                 i = i+1
             }
-        } else {
-            let model:newsModel = newsModel()
-            model.name = errorString
-            model.date = ""
-            model.location = ""
-            newsArray.add(model)
+            self.resultArray = newsArray
+            DispatchQueue.main.async {
+                self.newsTableView.dataSource = self
+                self.newsTableView.delegate = self
+                self.newsTableView.reloadData()
+            }
         }
-        return newsArray
+        
+        
+    }
+    
+    func getforData(completion:  @escaping (String) -> ()) {
+        if let url = URL(string: "http://www.career.fudan.edu.cn/jsp/career_talk_list.jsp?count=50&list=true") {
+            let request = URLRequest(url: url)
+            let task = URLSession.shared.dataTask(with: request) {
+                data, response, error in
+                if let data = data, let getString = String(data: data, encoding: String.Encoding.utf8), error == nil {
+                    completion(getString)
+                } else {
+                    print("error=\(error!.localizedDescription)")
+                }
+            }
+            task.resume()
+        }
+    }
+    //正则匹配函数，返回的是一个String数组
+    func matches(for regex: String, in text: String) -> [String] {
+        do {
+            let regex = try NSRegularExpression(pattern: regex)
+            let nsString = text as NSString
+            let results = regex.matches(in: text, range: NSRange(location: 0, length: nsString.length))
+            return results.map { nsString.substring(with: $0.range)}
+        } catch let error {
+            print("invalid regex: \(error.localizedDescription)")
+            return []
+        }
     }
     
     func navigationBar() {
@@ -141,4 +127,3 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 }
-
