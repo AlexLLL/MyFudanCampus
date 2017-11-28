@@ -410,13 +410,13 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="psW-c0-nsG">
                                 <rect key="frame" x="16" y="161" width="343" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">                                   
-这个App是基于hackerzhou学长的数据库完成的，非常感谢学长的帮忙。因为学校没有提供相应的API，所以很多功能都比较简陋，望大家见谅。
+                                <mutableString key="text">                                   
+这个App的数据是基于hackerzhou学长的GPAtool完成的，非常感谢学长的数据库。因为学校没有提供相应的API，所以很多功能都比较简陋，望大家见谅。
 
-同时，这是一个非官方应用，不代表任何复旦大学的官方意见。本App的开发基于The MIT License许可协议，禁止将其用于商业用途。
+同时，这是一个非官方应用，不代表任何复旦大学的官方意见。本App的开发基于The MIT License许可协议，只用于学习和交流开发经验。
 
 欢迎大家提供想法和建议，如果你能提供相应的资源是最好的。当然，更期待技术大牛提供最新的数据库。我的联系方式：lyx3717@126.com
-</string>
+</mutableString>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -428,8 +428,8 @@
                                     <constraint firstAttribute="height" constant="165" id="bhG-Pj-gQx"/>
                                 </constraints>
                                 <string key="text">五角场文秘职业技术学院
-             2010级见习魔法师
-             AlexLLL 参上</string>
+          初级见习魔法师
+             AlexLLL </string>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

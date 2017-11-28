@@ -27,7 +27,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func btnSearch(_ sender: Any) {
         resultArray = search()
         scoreTableView.reloadData()
-        //查看输出数组的log
+        
+        /*查看输出数组的log
         let x = 0
         let lessonName = (resultArray[x]as! resultModel).lessonName
         let lessonCode = (resultArray[x]as! resultModel).lessonCode
@@ -37,8 +38,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let totalStudentNumber = (resultArray[x]as! resultModel).totalStudentNumber
         let scoreNumber = (resultArray[x]as! resultModel).scoreCount
         let sV = (resultArray[x]as! resultModel).scoreVaule
-        print("\(lessonName) \(lessonCode) \(creditPoint) \(semesterName) \(teacherName) \(totalStudentNumber) \(sV) \(scoreNumber)")
-        //
+        //print("\(lessonName) \(lessonCode) \(creditPoint) \(semesterName) \(teacherName) \(totalStudentNumber) \(sV) \(scoreNumber)")
+        */
     }
     
     func search() -> NSMutableArray{

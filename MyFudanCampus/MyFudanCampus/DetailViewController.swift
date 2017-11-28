@@ -11,7 +11,6 @@ import Charts
 
 class DetailViewController: UIViewController {
 
-    //var lineChartEntry = [ChartDataEntry]()
     var cellShow = resultModel()
     
     @IBOutlet weak var pieChartView: PieChartView!
@@ -62,8 +61,6 @@ class DetailViewController: UIViewController {
             let dataEntry1 = PieChartDataEntry(value: values[i], label: dataPoints[i])
             dataEntries.append(dataEntry1)
         }
-        
-
         
         let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "绩点分布")
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
