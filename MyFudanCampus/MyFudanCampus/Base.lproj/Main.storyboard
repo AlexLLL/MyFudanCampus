@@ -148,7 +148,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5w-CP-Nhi">
                                 <rect key="frame" x="16" y="208" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.033028234178358741" green="0.94360723350253806" blue="0.83816799026213928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.038909211754798889" green="0.94376200437545776" blue="0.83856719732284546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="MgS-lq-aRk"/>
                                 </constraints>
@@ -410,13 +410,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="psW-c0-nsG">
                                 <rect key="frame" x="16" y="161" width="343" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">                                   
+                                <string key="text">                                   
 这个App的数据是基于hackerzhou学长的GPAtool完成的，非常感谢学长的数据库。因为学校没有提供相应的API，所以很多功能都比较简陋，望大家见谅。
 
 同时，这是一个非官方应用，不代表任何复旦大学的官方意见。本App的开发基于The MIT License许可协议，只用于学习和交流开发经验。
 
-欢迎大家提供想法和建议，如果你能提供相应的资源是最好的。当然，更期待技术大牛提供最新的数据库。我的联系方式：lyx3717@126.com
-</mutableString>
+欢迎大家提供想法和建议，如果你能提供相应的资源是最好的。当然，更期待技术大牛提供最新的数据库。</string>
                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -476,8 +475,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="BVV-iy-KXZ" kind="relationship" relationship="viewControllers" id="tOz-Ju-RbT"/>
-                        <segue destination="6O9-bW-ExU" kind="relationship" relationship="viewControllers" id="dVK-hN-Zrw"/>
                         <segue destination="pJ4-s6-Xpo" kind="relationship" relationship="viewControllers" id="CpM-RH-m0b"/>
+                        <segue destination="6O9-bW-ExU" kind="relationship" relationship="viewControllers" id="dVK-hN-Zrw"/>
                         <segue destination="wn8-jK-neg" kind="relationship" relationship="viewControllers" id="AoG-pO-RAC"/>
                     </connections>
                 </tabBarController>
