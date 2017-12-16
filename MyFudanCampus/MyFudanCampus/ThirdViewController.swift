@@ -98,7 +98,7 @@ class ThirdViewController: UIViewController, WKUIDelegate, WKNavigationDelegate 
             goBackBtn.addTarget(self, action: #selector(goBack), for: UIControlEvents.touchUpInside)
             goBackBtn.sizeToFit()
             let backItem = UIBarButtonItem.init(customView: goBackBtn)
-            closeBtn.setTitle("首页", for: UIControlState.normal)
+            closeBtn.setTitle("二手区", for: UIControlState.normal)
             closeBtn.addTarget(self, action: #selector(home), for: UIControlEvents.touchUpInside)
             closeBtn.sizeToFit()
             let closeItem = UIBarButtonItem.init(customView: closeBtn)

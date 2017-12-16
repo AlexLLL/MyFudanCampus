@@ -36,3 +36,9 @@ class newsModel: NSObject {
     var date = String()
     var location = String()
 }
+
+class busModel: NSObject {
+    var time1 = String()
+    var to = String()
+    var time2 = String()
+}

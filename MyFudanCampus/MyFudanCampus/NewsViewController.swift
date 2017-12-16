@@ -114,7 +114,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.date.text! = cellModel.date
         cell.location.text! = cellModel.location
         if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor(red: 224/255, green: 238/255, blue: 238/255, alpha: 0.5)
+            cell.backgroundColor = UIColor(red: 30/255, green: 144/255, blue: 255/255, alpha: 0.1)
         } else {
             cell.backgroundColor = UIColor.white
         }

@@ -395,10 +395,10 @@
             </objects>
             <point key="canvasLocation" x="2220" y="338.68065967016497"/>
         </scene>
-        <!--关于-->
+        <!--校车时刻-->
         <scene sceneID="1Y2-eq-Kdo">
             <objects>
-                <viewController id="wn8-jK-neg" sceneMemberID="viewController">
+                <viewController id="wn8-jK-neg" customClass="BusViewController" customModule="MyFudanCampus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qb2-qj-VOV"/>
                         <viewControllerLayoutGuide type="bottom" id="UJp-eq-T6d"/>
@@ -407,62 +407,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="psW-c0-nsG">
-                                <rect key="frame" x="16" y="161" width="343" height="224"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TOA-aH-Ges">
+                                <rect key="frame" x="0.0" y="73" width="375" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">                                   
-这个App的数据是基于hackerzhou学长的GPAtool完成的，非常感谢学长的数据库。因为学校没有提供相应的API，所以很多功能都比较简陋，望大家见谅。
-
-同时，这是一个非官方应用，不代表任何复旦大学的官方意见。本App的开发基于The MIT License许可协议，只用于学习和交流开发经验。
-
-欢迎大家提供想法和建议，如果你能提供相应的资源是最好的。当然，更期待技术大牛提供最新的数据库。</string>
-                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-bk-SVw">
-                                <rect key="frame" x="16" y="453" width="343" height="165"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="165" id="bhG-Pj-gQx"/>
-                                </constraints>
-                                <string key="text">五角场文秘职业技术学院
-          初级见习魔法师
-             AlexLLL </string>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="关于" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Pf-fQl">
-                                <rect key="frame" x="16" y="98" width="343" height="37"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="8Aw-yI-PNP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="busTableViewCell" rowHeight="22" id="HoQ-z0-3tx" customClass="busTableViewCell" customModule="MyFudanCampus" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HoQ-z0-3tx" id="J7Q-DM-FSp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="21.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsu-1g-Szh">
+                                                    <rect key="frame" x="15" y="0.0" width="126" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="126" id="6XY-XV-OKh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBx-zH-AWz">
+                                                    <rect key="frame" x="244" y="0.0" width="116" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="116" id="1b7-9C-If8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9Y-OT-WYC">
+                                                    <rect key="frame" x="138" y="0.0" width="98" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="98" id="m01-9z-GXk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cBx-zH-AWz" secondAttribute="trailing" constant="15" id="0ar-lr-TlI"/>
+                                                <constraint firstItem="xsu-1g-Szh" firstAttribute="top" secondItem="J7Q-DM-FSp" secondAttribute="top" id="Beh-mR-Hw4"/>
+                                                <constraint firstAttribute="bottom" secondItem="H9Y-OT-WYC" secondAttribute="bottom" constant="0.5" id="KTO-He-PIK"/>
+                                                <constraint firstItem="H9Y-OT-WYC" firstAttribute="top" secondItem="J7Q-DM-FSp" secondAttribute="top" id="Md1-Kt-dYV"/>
+                                                <constraint firstItem="xsu-1g-Szh" firstAttribute="leading" secondItem="J7Q-DM-FSp" secondAttribute="leading" constant="15" id="NQJ-Kq-flW"/>
+                                                <constraint firstItem="cBx-zH-AWz" firstAttribute="top" secondItem="J7Q-DM-FSp" secondAttribute="top" id="Q9b-Cx-rvq"/>
+                                                <constraint firstAttribute="bottom" secondItem="cBx-zH-AWz" secondAttribute="bottom" constant="0.5" id="U0y-O2-jy4"/>
+                                                <constraint firstItem="H9Y-OT-WYC" firstAttribute="centerX" secondItem="J7Q-DM-FSp" secondAttribute="centerX" id="sBG-V4-fxE"/>
+                                                <constraint firstAttribute="bottom" secondItem="xsu-1g-Szh" secondAttribute="bottom" constant="0.5" id="v9i-60-hQ5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="time1" destination="xsu-1g-Szh" id="ZGc-h7-lBF"/>
+                                            <outlet property="time2" destination="cBx-zH-AWz" id="ocg-Qb-CA9"/>
+                                            <outlet property="to" destination="H9Y-OT-WYC" id="YoV-3P-4iM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="psW-c0-nsG" firstAttribute="leading" secondItem="FSx-bk-SVw" secondAttribute="leading" id="29L-zd-WBq"/>
-                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="trailing" secondItem="WNv-ya-Kbp" secondAttribute="trailingMargin" id="AbW-jA-PId"/>
-                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="trailing" secondItem="psW-c0-nsG" secondAttribute="trailing" id="IHu-qC-aUv"/>
-                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="top" secondItem="qb2-qj-VOV" secondAttribute="bottom" constant="78" id="JDA-p5-imO"/>
-                            <constraint firstItem="psW-c0-nsG" firstAttribute="trailing" secondItem="FSx-bk-SVw" secondAttribute="trailing" id="kr9-7k-3LA"/>
-                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="leading" secondItem="psW-c0-nsG" secondAttribute="leading" id="mUv-OP-U7J"/>
-                            <constraint firstItem="FSx-bk-SVw" firstAttribute="top" secondItem="psW-c0-nsG" secondAttribute="bottom" constant="68" id="mjF-Bf-v47"/>
-                            <constraint firstItem="psW-c0-nsG" firstAttribute="top" secondItem="yjn-Pf-fQl" secondAttribute="bottom" constant="26" id="oyt-4p-nuq"/>
-                            <constraint firstItem="yjn-Pf-fQl" firstAttribute="leading" secondItem="WNv-ya-Kbp" secondAttribute="leadingMargin" id="umM-eZ-INM"/>
-                            <constraint firstItem="FSx-bk-SVw" firstAttribute="bottom" secondItem="UJp-eq-T6d" secondAttribute="top" id="vkp-7B-aoj"/>
+                            <constraint firstItem="TOA-aH-Ges" firstAttribute="top" secondItem="qb2-qj-VOV" secondAttribute="bottom" constant="53" id="J8z-PG-vrD"/>
+                            <constraint firstItem="TOA-aH-Ges" firstAttribute="leading" secondItem="WNv-ya-Kbp" secondAttribute="leading" id="Ocx-aJ-ddd"/>
+                            <constraint firstItem="TOA-aH-Ges" firstAttribute="bottom" secondItem="UJp-eq-T6d" secondAttribute="top" id="eb5-Ql-QsW"/>
+                            <constraint firstAttribute="trailing" secondItem="TOA-aH-Ges" secondAttribute="trailing" id="lGI-eI-4SV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="关于" image="Fourth" id="wUv-yA-4t0"/>
+                    <tabBarItem key="tabBarItem" title="校车时刻" image="Fourth" id="wUv-yA-4t0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="busTableView" destination="TOA-aH-Ges" id="gm0-Y5-bYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fY2-zV-Mcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="-627.4362818590705"/>
+            <point key="canvasLocation" x="2218.4000000000001" y="-628.33583208395805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -505,7 +525,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Fourth" width="30" height="30"/>
+        <image name="Fourth" width="33" height="30"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="third" width="30" height="30"/>

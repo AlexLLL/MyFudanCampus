@@ -30,6 +30,9 @@
 		FA99EAF21FCA8208007026E0 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA99EAF11FCA8208007026E0 /* NewsViewController.swift */; };
 		FAA591CA1FC084DA003C7AD4 /* scoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA591C91FC084DA003C7AD4 /* scoreModel.swift */; };
 		FABCF7EE1FCA8AD70039420A /* newsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCF7ED1FCA8AD70039420A /* newsTableViewCell.swift */; };
+		FACAF04D1FE54B1000C99524 /* bus.json in Resources */ = {isa = PBXBuildFile; fileRef = FACAF04C1FE54B1000C99524 /* bus.json */; };
+		FAF1719B1FE4F2700027F51F /* busTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1719A1FE4F2700027F51F /* busTableViewCell.swift */; };
+		FAF1719D1FE4F2F40027F51F /* BusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1719C1FE4F2F40027F51F /* BusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		FA99EAF11FCA8208007026E0 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		FAA591C91FC084DA003C7AD4 /* scoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreModel.swift; sourceTree = "<group>"; };
 		FABCF7ED1FCA8AD70039420A /* newsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsTableViewCell.swift; sourceTree = "<group>"; };
+		FACAF04C1FE54B1000C99524 /* bus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bus.json; sourceTree = "<group>"; };
+		FAF1719A1FE4F2700027F51F /* busTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = busTableViewCell.swift; sourceTree = "<group>"; };
+		FAF1719C1FE4F2F40027F51F /* BusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				FA658A4F1FC5D60E00454934 /* data.s3db */,
+				FACAF04C1FE54B1000C99524 /* bus.json */,
 				FA2036251FB9E8EE00E861CE /* AppDelegate.swift */,
 				FA99EAF11FCA8208007026E0 /* NewsViewController.swift */,
 				FA2036291FB9E8EF00E861CE /* SecondViewController.swift */,
@@ -174,6 +181,8 @@
 				FA2A83CE1FBF2F6800365C1F /* DetailViewController.swift */,
 				FA7D72CD1FBFED23002B8A2E /* SQLiteManager.swift */,
 				FAA591C91FC084DA003C7AD4 /* scoreModel.swift */,
+				FAF1719C1FE4F2F40027F51F /* BusViewController.swift */,
+				FAF1719A1FE4F2700027F51F /* busTableViewCell.swift */,
 				FA20362B1FB9E8EF00E861CE /* Main.storyboard */,
 				FA20362E1FB9E8EF00E861CE /* Assets.xcassets */,
 				FA2036301FB9E8EF00E861CE /* LaunchScreen.storyboard */,
@@ -344,6 +353,7 @@
 				FA2036321FB9E8EF00E861CE /* LaunchScreen.storyboard in Resources */,
 				FA658A501FC5D60E00454934 /* data.s3db in Resources */,
 				FA20362F1FB9E8EF00E861CE /* Assets.xcassets in Resources */,
+				FACAF04D1FE54B1000C99524 /* bus.json in Resources */,
 				FA20362D1FB9E8EF00E861CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +416,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyFudanCampus/Pods-MyFudanCampus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,9 +446,11 @@
 				FA2036561FB9F83C00E861CE /* ThirdViewController.swift in Sources */,
 				FABCF7EE1FCA8AD70039420A /* newsTableViewCell.swift in Sources */,
 				FA2A83C21FBF21DC00365C1F /* FMDatabasePool.m in Sources */,
+				FAF1719D1FE4F2F40027F51F /* BusViewController.swift in Sources */,
 				FA2A83C31FBF21DC00365C1F /* FMResultSet.m in Sources */,
 				FA99EAF21FCA8208007026E0 /* NewsViewController.swift in Sources */,
 				FA2036281FB9E8EE00E861CE /* FirstViewController.swift in Sources */,
+				FAF1719B1FE4F2700027F51F /* busTableViewCell.swift in Sources */,
 				FA2A83C01FBF21DC00365C1F /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
