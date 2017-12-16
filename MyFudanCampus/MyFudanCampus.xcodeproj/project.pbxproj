@@ -311,7 +311,7 @@
 				TargetAttributes = {
 					FA2036211FB9E8EE00E861CE = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					FA2036371FB9E8EF00E861CE = {
 						CreatedOnToolsVersion = 9.1;
@@ -617,15 +617,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6ACF1FA47ED8824CB796AC3B /* Pods-MyFudanCampus.debug.xcconfig */;
 			buildSettings = {
-				
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 239879R6B8;
 				INFOPLIST_FILE = MyFudanCampus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "85f31955-993e-4e80-848b-f0927cf72bd6";
+				PROVISIONING_PROFILE_SPECIFIER = "test iPhone";
 				SWIFT_OBJC_BRIDGING_HEADER = MyFudanCampus/Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -636,15 +638,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60DE0D9B68F87D4D201467CA /* Pods-MyFudanCampus.release.xcconfig */;
 			buildSettings = {
-				
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 239879R6B8;
 				INFOPLIST_FILE = MyFudanCampus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fudan.MyFudanCampus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f47b42a3-f13b-4136-82ca-d811ed5128c5";
+				PROVISIONING_PROFILE_SPECIFIER = "app store";
 				SWIFT_OBJC_BRIDGING_HEADER = MyFudanCampus/Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -654,7 +658,6 @@
 		FA2036501FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusTests/Info.plist;
@@ -670,7 +673,6 @@
 		FA2036511FB9E8EF00E861CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusTests/Info.plist;
@@ -686,7 +688,6 @@
 		FA2036531FB9E8EF00E861CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFudanCampusUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -24,6 +24,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         inputName.clearButtonMode = .always
     }
     
+    @IBAction func closeKeyBoard(_ sender: Any) {
+        inputName.resignFirstResponder();
+    }
+    
     @IBAction func btnSearch(_ sender: Any) {
         resultArray = search()
         scoreTableView.reloadData()
@@ -141,6 +145,10 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.lessonCode.text! = cellModel.lessonCode
         cell.teacherName.text! = cellModel.teacherName
         return cell
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        inputName.resignFirstResponder()
+        return true
     }
     
     // UITableViewDelegate 方法，处理列表项的选中事件

@@ -126,7 +126,7 @@
                         <viewControllerLayoutGuide type="top" id="qZQ-Qe-Xku"/>
                         <viewControllerLayoutGuide type="bottom" id="rIf-6P-xoo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -262,6 +262,9 @@
                             <constraint firstItem="R4P-4H-yqv" firstAttribute="bottom" secondItem="rIf-6P-xoo" secondAttribute="top" id="tXY-GV-GLB"/>
                             <constraint firstItem="qVU-1W-EgK" firstAttribute="top" secondItem="qZQ-Qe-Xku" secondAttribute="bottom" constant="77" id="wwj-UE-5NZ"/>
                         </constraints>
+                        <connections>
+                            <action selector="closeKeyBoard:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="oPn-vl-KIQ"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="agY-LY-yTG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
